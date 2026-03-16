@@ -161,7 +161,7 @@
       "level": "intermediate"
     }
   ],
-  "projects": [
+  "_projects_disabled": [
     {
       "title": "Assistive UX Toolkit",
       "subtitle": "Tooling & patterns for inclusive interfaces",
