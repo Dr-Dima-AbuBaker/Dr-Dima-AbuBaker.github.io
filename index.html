@@ -233,7 +233,7 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
 <body data-theme="light">
 <header class="header"><div class="wrap header-inner">
 <a class="brand" href="#top" id="brandLink"><div class="logo" id="brandInitials"></div><div class="brand-text"><div class="name" id="brandName"></div><div class="tagline" id="brandTagline"></div></div></a>
-<nav><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+<nav><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
 <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button></nav>
 </div></header>
 
@@ -245,7 +245,7 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
   <div id="labContent"></div>
 </section>
 <section class="section" id="expertise"><div class="section-header"><h2>Areas of Expertise</h2><p>Core skills and research domains — hover for proficiency level.</p></div><div class="expertise-cloud" id="expertiseCloud"></div></section>
-<section class="section" id="projects"><div class="section-header"><h2>Projects</h2><p>Selected projects with demos, source code, and documentation.</p></div><div class="grid g3" id="projectsGrid"></div></section>
+<!-- <section class="section" id="projects"><div class="section-header"><h2>Projects</h2><p>Selected projects with demos, source code, and documentation.</p></div><div class="grid g3" id="projectsGrid"></div></section> -->
 <section class="section" id="publications"><div class="section-header"><h2>Publications</h2><p>Selected publications with BibTeX, PDF download, and sharing.</p></div><div id="pubContent"></div></section>
 <section class="section" id="teaching"><div class="section-header"><h2>Teaching</h2><p>Courses I teach at the University of Utah.</p></div><div id="teachingGrid"></div></section>
 <section class="section" id="experience"><div class="section-header"><h2>Experience &amp; Education</h2></div><div id="expTabsContainer"></div></section>
@@ -318,7 +318,7 @@ function renderHero(p, projects){
   const dots=allPhotos.map((ph,i)=>'<button class="photo-dot'+(i===0?' active':'')+'" data-i="'+i+'"></button>').join('');
   
   document.getElementById('heroSection').innerHTML=
-    '<section class="hero"><div class="hero-text reveal"><div class="kicker">Welcome</div><h1>'+p.headline+'</h1><p class="lead">'+p.bio+'</p><div class="hero-actions"><a class="btn-primary" href="#projects">'+ICONS.grid+'View Projects</a><a class="btn-outline" href="#publications">Publications</a></div><div class="hero-role">'+ICONS.user+' '+esc(p.role)+' · '+esc(p.affiliation)+'</div></div><div class="featured-card reveal"><div class="photo-carousel" id="photoCarousel"><div class="photo-track" id="photoTrack">'+slides+'</div><div class="photo-dots" id="photoDots">'+dots+'</div></div><div class="carousel-nav"><button class="car-btn" id="photoPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button><button class="car-btn" id="photoNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button></div></div></section>';
+    '<section class="hero"><div class="hero-text reveal"><div class="kicker">Welcome</div><h1>'+p.headline+'</h1><p class="lead">'+p.bio+'</p><div class="hero-actions"><a class="btn-primary" href="#publications">'+ICONS.grid+'View Publications</a><a class="btn-outline" href="#teaching">Teaching</a></div><div class="hero-role">'+ICONS.user+' '+esc(p.role)+' · '+esc(p.affiliation)+'</div></div><div class="featured-card reveal"><div class="photo-carousel" id="photoCarousel"><div class="photo-track" id="photoTrack">'+slides+'</div><div class="photo-dots" id="photoDots">'+dots+'</div></div><div class="carousel-nav"><button class="car-btn" id="photoPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button><button class="car-btn" id="photoNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button></div></div></section>';
   document.getElementById('brandInitials').textContent=p.initials;
   document.getElementById('brandName').textContent=p.name;
   document.getElementById('brandTagline').textContent=p.tagline;
@@ -414,7 +414,7 @@ function renderLab(lab, profile) {
     </div>
     
     <div class="lab-tabs" style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 2px solid var(--surface);">
-      <button class="lab-tab-btn active" data-tab="lab-overview" style="background:none; border:none; padding:0.75rem 1.5rem; font-family:var(--sans); font-weight:700; font-size:1.05rem; color:var(--accent); cursor:pointer; border-bottom:2px solid var(--accent); margin-bottom:-2px; transition:all 0.3s;">Current Projects & Overview</button>
+      <button class="lab-tab-btn active" data-tab="lab-overview" style="background:none; border:none; padding:0.75rem 1.5rem; font-family:var(--sans); font-weight:700; font-size:1.05rem; color:var(--accent); cursor:pointer; border-bottom:2px solid var(--accent); margin-bottom:-2px; transition:all 0.3s;">Lab Overview</button>
       <button class="lab-tab-btn" data-tab="lab-members" style="background:none; border:none; padding:0.75rem 1.5rem; font-family:var(--sans); font-weight:700; font-size:1.05rem; color:var(--muted); cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-2px; transition:all 0.3s;">Lab Members</button>
     </div>
     
@@ -434,7 +434,7 @@ function renderLab(lab, profile) {
             <p style="color:var(--text); font-size:0.95rem; line-height:1.6;">${esc(lab.description)}</p>
           </div>
           <div style="text-align:center;">
-            <a href="#projects" class="btn-primary" style="display:inline-flex; align-items:center; gap:0.5rem;">${ICONS.grid} View Current Projects</a>
+            <a href="#publications" class="btn-primary" style="display:inline-flex; align-items:center; gap:0.5rem;">${ICONS.grid} View Publications</a>
           </div>
         </div>
       </div>
@@ -687,7 +687,7 @@ fetch('data.json').then(r=>r.json()).then(D=>{
   renderHiring(D.hiring);
   renderLab(D.lab, D.profile);
   renderExpertise(D.expertise);
-  renderProjects(D.projects);
+  if(D.projects && D.projects.length > 0) renderProjects(D.projects);
   renderPublications(D.publications,pubStyle);
   renderTeaching(D.teaching);
   renderExperience(D.experience,D.education);
