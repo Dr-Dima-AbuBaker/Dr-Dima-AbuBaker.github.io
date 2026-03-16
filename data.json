@@ -36,29 +36,61 @@
       {
         "roleGroup": "Postdoctoral Researchers",
         "people": [
-          {"name": "Dr. Alice Smith", "role": "Postdoc, Machine Learning", "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"},
-          {"name": "Dr. Bob Jones", "role": "Postdoc, HCI", "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop"}
+          {
+            "name": "Dr. Alice Smith",
+            "role": "Postdoc, Machine Learning",
+            "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Dr. Bob Jones",
+            "role": "Postdoc, HCI",
+            "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop"
+          }
         ]
       },
       {
         "roleGroup": "Ph.D. Students",
         "people": [
-          {"name": "Charlie Davis", "role": "Ph.D. Candidate", "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop"},
-          {"name": "Diana Evans", "role": "Ph.D. Student", "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop"}
+          {
+            "name": "Charlie Davis",
+            "role": "Ph.D. Candidate",
+            "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Diana Evans",
+            "role": "Ph.D. Student",
+            "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop"
+          }
         ]
       },
       {
         "roleGroup": "Master's Students",
         "people": [
-          {"name": "Evan Frank", "role": "M.S. Student", "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"},
-          {"name": "Fiona Green", "role": "M.S. Student", "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"}
+          {
+            "name": "Evan Frank",
+            "role": "M.S. Student",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Fiona Green",
+            "role": "M.S. Student",
+            "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"
+          }
         ]
       },
       {
         "roleGroup": "Undergraduate Researchers",
         "people": [
-          {"name": "George Harris", "role": "B.S. Student", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"},
-          {"name": "Hannah Irwin", "role": "B.S. Student", "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop"}
+          {
+            "name": "George Harris",
+            "role": "B.S. Student",
+            "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Hannah Irwin",
+            "role": "B.S. Student",
+            "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop"
+          }
         ]
       }
     ]
@@ -160,154 +192,124 @@
   ],
   "publications": [
     {
-      "title": "Improving soft soil using high vacuum densification method in the laboratory",
-      "authors": "Ripon Chandra Malo and Mehedi Ahmed Ansary",
-      "highlightAuthor": "A. Researcher",
-      "venue": "Arabian Journal of Geosciences",
+      "title": "Depression, Anxiety, and Stress in Undergraduate Dental Students During Viva and Case Presentation Oral Examinations Using the DASS‐21 Scale",
+      "authors": "Samiha Yousef Sartawi and Dima Abu Baker and Sanaa Abdallah Aljamani and Rahaf Nassar",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "Journal of Dental Education",
       "year": 2025,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
-      "description": "This study presents a controlled laboratory evaluation of the high vacuum densification method (HVDM) for improving extremely soft soil using a 1 g physical model. Following several trials on the phys...",
-      "pdfUrl": "https://link.springer.com/article/10.1007/s12517-025-12278-2",
-      "url": "https://link.springer.com/article/10.1007/s12517-025-12278-2",
-      "citations": 0,
-      "bibtex": "@article{ripon2025,title={Improving soft soil using high vacuum densification method in the laboratory},author={Ripon Chandra Malo and Mehedi Ahmed Ansary},year={2025}}"
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "Stress among dental students is mainly driven by the demanding nature of dental education which is exaggerated during exams and specifically final year oral examinations.This study aimed to assess the...",
+      "pdfUrl": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jdd.13884",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jdd.13884",
+      "citations": 2,
+      "bibtex": "@article{samiha2025,title={Depression, Anxiety, and Stress in Undergraduate Dental Students During Viva and Case Presentation Oral Examinations Using the DASS‐21 Scale},author={Samiha Yousef Sartawi and Dima Abu Baker and Sanaa Abdallah Aljamani and Rahaf Nassar},year={2025}}"
     },
     {
-      "title": "Human-Centered Pipelines for Reproducible Research",
-      "authors": "A. Researcher, B. Coauthor",
-      "highlightAuthor": "A. Researcher",
-      "venue": "Journal of Examples, Vol. 12, Issue 3",
+      "title": "Acrylic resin versus metal palatal base in complete dentures: A randomized crossover clinical trial of patient‐reported outcomes",
+      "authors": "Motasum Abu‐Awwad and Laila Hailkal and Mohammad Bustani and Nadia Ereifej and Dima Abu Baker and Mahmoud K AL‐Omiri",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "Journal of Prosthodontics",
+      "year": 2025,
+      "type": "journal",
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "To compare the effects of acrylic resin and metal palatal bases in complete dentures on patient satisfaction and quality of life.This randomized, two‐period crossover clinical trial involved 30 edentu...",
+      "pdfUrl": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jopr.70001",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jopr.70001",
+      "citations": 0,
+      "bibtex": "@article{motasum2025,title={Acrylic resin versus metal palatal base in complete dentures: A randomized crossover clinical trial of patient‐reported outcomes},author={Motasum Abu‐Awwad and Laila Hailkal and Mohammad Bustani and Nadia Ereifej and Dima Abu Baker and Mahmoud K AL‐Omiri},year={2025}}"
+    },
+    {
+      "title": "Performance of Dental Students in Prosthodontics Laboratory: A Randomised Trial Comparing Written Instruction Lecture, Video‐Recorded and Live Demonstration",
+      "authors": "Dima Abu Baker and Rasha Alamoush and Mohammad Bustani and Motasum Abu‐Awwad and Wijdan El Manaseer and Oraib Omari",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "European Journal of Dental Education",
+      "year": 2025,
+      "type": "journal",
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "Teaching methodologies have evolved from traditional lecturing to include the utilisation of recording technologies. This study aims to assess the impact of three teaching methods: (written instructio...",
+      "pdfUrl": "https://onlinelibrary.wiley.com/doi/abs/10.1111/eje.70009",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/eje.70009",
+      "citations": 0,
+      "bibtex": "@article{dima2025,title={Performance of Dental Students in Prosthodontics Laboratory: A Randomised Trial Comparing Written Instruction Lecture, Video‐Recorded and Live Demonstration},author={Dima Abu Baker and Rasha Alamoush and Mohammad Bustani and Motasum Abu‐Awwad and Wijdan El Manaseer and Oraib Omari},year={2025}}"
+    },
+    {
+      "title": "Stress experienced by dental students performing clinical training in different dental disciplines: a cross-sectional study",
+      "authors": "Rasha A Alamoush and Sereen Al-Sawaeir and Dima Abu Baker and Sanaa A Aljamani and Salah A Alomoush and Mahmoud K Al-Omiri",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "Journal of occupational health",
       "year": 2024,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop",
-      "description": "Proposed a reproducible workflow for HCI experiments integrating participant privacy checks and automated analysis pipelines.",
-      "pdfUrl": "#",
-      "url": "https://example.edu/paper1",
-      "citations": 34,
-      "bibtex": "@article{researcher2024,title={Human-Centered Pipelines},author={A. Researcher and B. Coauthor},journal={Journal of Examples},year={2024}}"
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": " Objectives: To assess the stress level, the impact of stress factors, and discrepancies between fourth- and fifth-year undergraduate clinical students at the University of Jordan. Methods: A cross-se...",
+      "pdfUrl": "https://academic.oup.com/joh/article-abstract/66/1/uiae006/7606911",
+      "url": "https://academic.oup.com/joh/article-abstract/66/1/uiae006/7606911",
+      "citations": 25,
+      "bibtex": "@article{rasha2024,title={Stress experienced by dental students performing clinical training in different dental disciplines: a cross-sectional study},author={Rasha A Alamoush and Sereen Al-Sawaeir and Dima Abu Baker and Sanaa A Aljamani and Salah A Alomoush and Mahmoud K Al-Omiri},year={2024}}"
     },
     {
-      "title": "Privacy-Preserving Data Collection in User Studies",
-      "authors": "A. Researcher, E. Privacy, F. Methods",
-      "highlightAuthor": "A. Researcher",
-      "venue": "ACM Transactions on Accessible Computing, Vol. 8",
-      "year": 2023,
+      "title": "Multi-Modal Digital Impressions for Palatal Defects",
+      "authors": "D Abu Baker and S Patel and P Charalambous and N Albuloushi and J Rodriguez",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "The European journal of prosthodontics and restorative dentistry",
+      "year": 2024,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1563986768609-322da13575f2?w=200&h=200&fit=crop",
-      "description": "Introduced a framework for collecting sensitive user data while maintaining participant anonymity and meeting IRB compliance standards.",
-      "pdfUrl": "#",
-      "url": "https://example.edu/paper4",
-      "citations": 18,
-      "bibtex": "@article{researcher2023,title={Privacy-Preserving Data Collection},author={A. Researcher and E. Privacy and F. Methods},journal={ACM TACCESS},year={2023}}"
-    },
-    {
-      "title": "Experimental Investigation of High Vacuum Densification Method",
-      "authors": "Ripon Chandra Malo",
-      "highlightAuthor": "A. Researcher",
-      "venue": "",
-      "year": 2023,
-      "type": "conference",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
-      "description": "Bangladesh is a densely populated country with a 32% coastal area. Many coastal regions  of Bangladesh have very soft to soft soil with poor geotechnical properties such as very low bearing capacity, ...",
-      "pdfUrl": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/6609",
-      "url": "http://lib.buet.ac.bd:8080/xmlui/handle/123456789/6609",
-      "citations": 0,
-      "bibtex": "@inproceedings{ripon2023,title={Experimental Investigation of High Vacuum Densification Method},author={Ripon Chandra Malo},year={2023}}"
-    },
-    {
-      "title": "Assistive Interactions in Standard UI Patterns",
-      "authors": "C. Author, A. Researcher",
-      "highlightAuthor": "A. Researcher",
-      "venue": "Proceedings of CHI Conference on Human Factors",
-      "year": 2022,
-      "type": "conference",
-      "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=200&h=200&fit=crop",
-      "description": "Explores how assistive feedback can be integrated into standard UI patterns without increasing cognitive load for sighted users.",
-      "pdfUrl": "#",
-      "url": "https://example.edu/paper2",
-      "citations": 52,
-      "bibtex": "@inproceedings{author2022,title={Assistive Interactions},author={C. Author and A. Researcher},booktitle={Proc. CHI},year={2022}}"
-    },
-    {
-      "title": "Multimodal Feedback for Screen Reader Users",
-      "authors": "A. Researcher, G. Haptics",
-      "highlightAuthor": "A. Researcher",
-      "venue": "Proceedings of ASSETS Conference on Assistive Technologies",
-      "year": 2021,
-      "type": "conference",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=200&h=200&fit=crop",
-      "description": "Evaluated haptic and auditory feedback modalities for screen reader navigation in complex web applications.",
-      "pdfUrl": "#",
-      "url": "https://example.edu/paper5",
-      "citations": 27,
-      "bibtex": "@inproceedings{researcher2021b,title={Multimodal Feedback for Screen Reader Users},author={A. Researcher and G. Haptics},booktitle={Proc. ASSETS},year={2021}}"
-    },
-    {
-      "title": "Inclusive Design Patterns for Multi-Modal Applications",
-      "authors": "A. Researcher, D. Analyst",
-      "highlightAuthor": "A. Researcher",
-      "venue": "Workshop on Inclusive UX, co-located with CHI",
-      "year": 2021,
-      "type": "workshop",
-      "image": "https://images.unsplash.com/photo-1558403194-611308249627?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1558403194-611308249627?w=200&h=200&fit=crop",
-      "description": "Catalogued 12 design patterns for multi-modal assistive applications with implementation guidelines and evaluation criteria.",
-      "pdfUrl": "#",
-      "url": "https://example.edu/paper3",
-      "citations": 11,
-      "bibtex": "@inproceedings{researcher2021,title={Inclusive Design Patterns},author={A. Researcher and D. Analyst},booktitle={Workshop on Inclusive UX},year={2021}}"
-    },
-    {
-      "title": "Improvement of Geotechnical Properties of Expansive Soil by Lime and Polypropylene Fiber Material",
-      "authors": "Md Monir Hossain and Ripon Chandro Malo",
-      "highlightAuthor": "A. Researcher",
-      "venue": "Journal of Geotechnical Studies",
-      "year": 2021,
-      "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
-      "description": "Improvement of the Geotechnical properties of expansive soils by mixing Lime and Polypropylene Fibers is the main concentration of this research. For this research purpose, expansive soil samples were...",
-      "pdfUrl": "https://www.researchgate.net/profile/Ripon-Malo/publication/352994512_Improvement_of_Geotechnical_Properties_of_Expansive_Soil_by_Lime_and_Polypropylene_Fiber_Material/links/60e6e8631c28af3458530678/Improvement-of-Geotechnical-Properties-of-Expansive-Soil-by-Lime-and-Polypropylene-Fiber-Material.pdf",
-      "url": "https://www.researchgate.net/profile/Ripon-Malo/publication/352994512_Improvement_of_Geotechnical_Properties_of_Expansive_Soil_by_Lime_and_Polypropylene_Fiber_Material/links/60e6e8631c28af3458530678/Improvement-of-Geotechnical-Properties-of-Expansive-Soil-by-Lime-and-Polypropylene-Fiber-Material.pdf",
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "INTRODUCTION: This in-vitro study investigated limitations of intra-oral scanners (IOS) in capturing palatal defects at decreased mouth openings. The trueness and precision of composite 3D-printed mod...",
+      "pdfUrl": "https://research.manchester.ac.uk/en/publications/multi-modal-digital-impressions-for-palatal-defects",
+      "url": "https://research.manchester.ac.uk/en/publications/multi-modal-digital-impressions-for-palatal-defects",
       "citations": 1,
-      "bibtex": "@article{md2021,title={Improvement of Geotechnical Properties of Expansive Soil by Lime and Polypropylene Fiber Material},author={Md Monir Hossain and Ripon Chandro Malo},year={2021}}"
+      "bibtex": "@article{d2024,title={Multi-Modal Digital Impressions for Palatal Defects},author={D Abu Baker and S Patel and P Charalambous and N Albuloushi and J Rodriguez},year={2024}}"
     },
     {
-      "title": "Correlations between CPT, SPT and Soil Parameters for Khulna, Bangladesh",
-      "authors": "Md Monir Hossain and Nasima Sultana and Ripon Chandro Malo",
-      "highlightAuthor": "A. Researcher",
-      "venue": "Journal of Geotechnical Studies",
-      "year": 2020,
+      "title": "Academic performance of dental students: A randomised trial comparing live, audio recorded and video recorded lectures",
+      "authors": "Abedalrahman J Shqaidef and Dima Abu‐Baker and Zaid Bakri Al‐Bitar and Serene Badran and Ahmad M Hamdan",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "European Journal of Dental Education",
+      "year": 2021,
       "type": "journal",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
-      "description": "Soil is naturally heterogeneous and non-uniform materials because it is made up of different types of matter. Understanding of soil parameters is one of the most complex tasks in geotechnical engineer...",
-      "pdfUrl": "https://www.researchgate.net/profile/Nasima-Sultana/publication/340950240_Correlations_between_CPT_SPT_and_Soil_Parameters_for_Khulna_Bangladesh/links/5ea6f9ac299bf1125612bf2e/Correlations-between-CPT-SPT-and-Soil-Parameters-for-Khulna-Bangladesh.pdf",
-      "url": "https://www.researchgate.net/profile/Nasima-Sultana/publication/340950240_Correlations_between_CPT_SPT_and_Soil_Parameters_for_Khulna_Bangladesh/links/5ea6f9ac299bf1125612bf2e/Correlations-between-CPT-SPT-and-Soil-Parameters-for-Khulna-Bangladesh.pdf",
-      "citations": 6,
-      "bibtex": "@article{md2020,title={Correlations between CPT, SPT and Soil Parameters for Khulna, Bangladesh},author={Md Monir Hossain and Nasima Sultana and Ripon Chandro Malo},year={2020}}"
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "To compare the academic performance of 4th‐year dental students randomly divided into three learning groups: live lecture, video recorded lecture and audio recorded lecture. To assess students’ attitu...",
+      "pdfUrl": "https://onlinelibrary.wiley.com/doi/abs/10.1111/eje.12614",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/eje.12614",
+      "citations": 28,
+      "bibtex": "@article{abedalrahman2021,title={Academic performance of dental students: A randomised trial comparing live, audio recorded and video recorded lectures},author={Abedalrahman J Shqaidef and Dima Abu‐Baker and Zaid Bakri Al‐Bitar and Serene Badran and Ahmad M Hamdan},year={2021}}"
     },
     {
-      "title": "SOIL IMPROVEMENT USING LIME AND POLYPROPYLENE FIBERS",
-      "authors": "M. Hossain and Md and RC Malo & Safi",
-      "highlightAuthor": "A. Researcher",
-      "venue": "",
-      "year": 2018,
-      "type": "conference",
-      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop",
-      "description": "",
-      "pdfUrl": "#",
-      "url": "#",
-      "citations": 0,
-      "bibtex": "@inproceedings{m.2018,title={SOIL IMPROVEMENT USING LIME AND POLYPROPYLENE FIBERS},author={M. Hossain and Md and RC Malo & Safi},year={2018}}"
+      "title": "Impact of adding palatal rugae to complete dentures on patient satisfaction and oral health–related quality of life: a randomized crossover clinical trial",
+      "authors": "Motasum Abu-Awwad and Nadia Ereifej and Mais Al-Hattab and Dima Abu Baker and Haralampos Petridis",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "The Journal of Prosthetic Dentistry",
+      "year": 2021,
+      "type": "journal",
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "Statement of problemThe addition of palatal rugae to complete dentures has been suggested to improve the satisfaction of patients with different oral functions. However, clinical studies to support th...",
+      "pdfUrl": "https://www.sciencedirect.com/science/article/pii/S0022391320304662",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022391320304662",
+      "citations": 14,
+      "bibtex": "@article{motasum2021,title={Impact of adding palatal rugae to complete dentures on patient satisfaction and oral health–related quality of life: a randomized crossover clinical trial},author={Motasum Abu-Awwad and Nadia Ereifej and Mais Al-Hattab and Dima Abu Baker and Haralampos Petridis},year={2021}}"
+    },
+    {
+      "title": "Facebook and dental education: what do students like?",
+      "authors": "Mohammad A Al-Rabab’ah and Yazan M Hassona and Dima Abu Bakr and Faleh A Sawair",
+      "highlightAuthor": "Dr. R.C. Malo",
+      "venue": "Jordan Medical Journal",
+      "year": 2019,
+      "type": "journal",
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "Objectives: To examine views and attitudes of undergraduate dental students toward using Facebook as an educational source.Methods: clinical dental students are interviewed in 2016 and asked both open...",
+      "pdfUrl": "https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=04469283&AN=137404654&h=6i4bfDtVjrOzXqJx4NCEkk6DC1r5tRow4YDrkMito7n%2BkypPcfUo395%2BjBMHxsNS%2Fue%2FbVKp2NCVy4DudqtnxQ%3D%3D&crl=c",
+      "url": "https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=04469283&AN=137404654&h=6i4bfDtVjrOzXqJx4NCEkk6DC1r5tRow4YDrkMito7n%2BkypPcfUo395%2BjBMHxsNS%2Fue%2FbVKp2NCVy4DudqtnxQ%3D%3D&crl=c",
+      "citations": 7,
+      "bibtex": "@article{mohammad2019,title={Facebook and dental education: what do students like?},author={Mohammad A Al-Rabab’ah and Yazan M Hassona and Dima Abu Bakr and Faleh A Sawair},year={2019}}"
     }
   ],
   "teaching": [
@@ -474,7 +476,7 @@
   },
   "settings": {
     "publicationStyle": "alt",
-    "scholarId": "7-QY6VEAAAAJ",
+    "scholarId": "vZFqHosAAAAJ",
     "_theme_options": "Available themes: 'BH' (default light), 'blue' (academic light blue), 'dark'",
     "theme": "blue"
   }
