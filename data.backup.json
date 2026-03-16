@@ -1,0 +1,362 @@
+{
+  "profile": {
+    "name": "Dr. R.C. Malo",
+    "initials": "RC",
+    "tagline": "ML · GEO · SciML Research",
+    "headline": "Designing inclusive interfaces & reproducible research",
+    "bio": "I'm <strong>Dr. R.C.Malo</strong> — I build usable systems, publish reproducible work, and teach students how to design responsibly. This portfolio showcases my projects, publications, and teaching.",
+    "role": "Assistant Professor",
+    "affiliation": "University of Utah",
+    "photos": [
+      {
+        "src": "images/image1.jpg",
+        "alt": "Portrait"
+      },
+      {
+        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDnPW0npgfHE3SRGMN7Yl0FlV8PheXWuTOioHTGXxld9wfxHTnWraDcTrkN0sq4fxjpsIYJebpJVQu5J23Ge6isguhF1l1k0XArjvHAmzlNkDIPKSr-Lwfa4x_9UR01jFYv7KPS9D52tN94ANzksoer4H9v5vxSUM-9ghRCUOKKxEbRW0Nlt2QlWNON3Q/s320/IMG_4502.jpg",
+        "alt": "Headshot"
+      },
+      {
+        "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAfZT8IiG1wH3bdfPXUVci_AQtM1icfcx9KpT4lyLATkYWiPvhkcmPlbWk44G8cR8a9TRw6aGpkXJv57HVwDfJy4zI6yPnv0yT3Q4mqt0NtvpaqUZU8vJZTnw5BoAdheoY1vTMe7Qzo7KqvQPL62QfTXEcflC6tXHQ0dJdThobrGsKtO42p5D7puKdCac/s320/like.png",
+        "alt": "Professional"
+      }
+    ]
+  },
+  "hiring": {
+    "enabled": true,
+    "title": "Open to Collaboration & Hiring",
+    "description": "I'm actively seeking research collaborators, postdoctoral fellows, and motivated graduate students interested in human-computer interaction, accessibility, and reproducible research methods. If you share a passion for inclusive design and rigorous experimentation, let's build something meaningful together."
+  },
+  "lab": {
+    "title": "Advanced Systems & Learning Lab",
+    "description": "Our lab focuses on building usable systems, publishing reproducible work, and designing responsibly. We explore the intersection of human-computer interaction, machine learning, and accessibility to solve real-world problems. We prioritize hands-on projects, rigorous experiments, and open-source contributions.",
+    "directorName": "Dr. R.C. Malo",
+    "directorRole": "Lab Director & Principal Investigator",
+    "members": [
+      {
+        "roleGroup": "Postdoctoral Researchers",
+        "people": [
+          {
+            "name": "Dr. Alice Smith",
+            "role": "Postdoc, Machine Learning",
+            "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Dr. Bob Jones",
+            "role": "Postdoc, HCI",
+            "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop"
+          }
+        ]
+      },
+      {
+        "roleGroup": "Ph.D. Students",
+        "people": [
+          {
+            "name": "Charlie Davis",
+            "role": "Ph.D. Candidate",
+            "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Diana Evans",
+            "role": "Ph.D. Student",
+            "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop"
+          }
+        ]
+      },
+      {
+        "roleGroup": "Master's Students",
+        "people": [
+          {
+            "name": "Evan Frank",
+            "role": "M.S. Student",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Fiona Green",
+            "role": "M.S. Student",
+            "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"
+          }
+        ]
+      },
+      {
+        "roleGroup": "Undergraduate Researchers",
+        "people": [
+          {
+            "name": "George Harris",
+            "role": "B.S. Student",
+            "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
+          },
+          {
+            "name": "Hannah Irwin",
+            "role": "B.S. Student",
+            "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop"
+          }
+        ]
+      }
+    ]
+  },
+  "expertise": [
+    {
+      "name": "Human-Computer Interaction",
+      "level": "expert"
+    },
+    {
+      "name": "Accessibility",
+      "level": "expert"
+    },
+    {
+      "name": "Reproducible Research",
+      "level": "expert"
+    },
+    {
+      "name": "User Study Design",
+      "level": "advanced"
+    },
+    {
+      "name": "Statistical Analysis",
+      "level": "advanced"
+    },
+    {
+      "name": "Python",
+      "level": "advanced"
+    },
+    {
+      "name": "R / RStudio",
+      "level": "advanced"
+    },
+    {
+      "name": "React / JavaScript",
+      "level": "intermediate"
+    },
+    {
+      "name": "Figma & Sketch",
+      "level": "intermediate"
+    },
+    {
+      "name": "Machine Learning",
+      "level": "intermediate"
+    },
+    {
+      "name": "Assistive Technology",
+      "level": "advanced"
+    },
+    {
+      "name": "LaTeX",
+      "level": "intermediate"
+    },
+    {
+      "name": "Data Visualization",
+      "level": "advanced"
+    },
+    {
+      "name": "Docker & CI/CD",
+      "level": "intermediate"
+    },
+    {
+      "name": "Inclusive Design",
+      "level": "expert"
+    },
+    {
+      "name": "Natural Language Processing",
+      "level": "intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Assistive UX Toolkit",
+      "subtitle": "Tooling & patterns for inclusive interfaces",
+      "year": "2025",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop",
+      "description": "A toolkit for designers & developers to build accessible UI components and test assistive workflows.",
+      "github": "https://github.com/example/assistive-ux",
+      "url": "https://example.edu/assistive-ux"
+    },
+    {
+      "title": "Repro Pipelines",
+      "subtitle": "Workflows for reproducible experiments",
+      "year": "2024",
+      "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=300&fit=crop",
+      "description": "Automated scripts and containerized environments that make experiments reproducible.",
+      "github": "https://github.com/example/repro-pipelines",
+      "url": "https://example.edu/repro-pipelines"
+    },
+    {
+      "title": "Study Portal",
+      "subtitle": "Participant recruitment & consent",
+      "year": "2023",
+      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=300&fit=crop",
+      "description": "A secure, privacy-preserving portal to manage research participants and consent forms.",
+      "github": "https://github.com/example/study-portal",
+      "url": "https://example.edu/study-portal"
+    }
+  ],
+  "publications": [],
+  "teaching": [
+    {
+      "code": "CS 6360",
+      "title": "Human-Computer Interaction",
+      "level": "Graduate",
+      "semester": "Spring 2026",
+      "description": "Advanced study of human-computer interaction principles, interface design, and user experience research methods. Topics include cognitive psychology, accessibility, design thinking, and evaluation techniques.",
+      "enrollment": 45
+    },
+    {
+      "code": "CS 3650",
+      "title": "User Interface Design",
+      "level": "Undergraduate",
+      "semester": "Fall 2025",
+      "description": "Introduction to designing intuitive and accessible user interfaces. Covers design principles, prototyping, usability testing, and modern UI frameworks.",
+      "enrollment": 78
+    },
+    {
+      "code": "CS 7890",
+      "title": "Accessibility and Inclusive Design",
+      "level": "Graduate",
+      "semester": "Spring 2026",
+      "description": "Deep dive into designing technology for diverse users including those with disabilities. Explores WCAG guidelines, assistive technologies, and universal design principles.",
+      "enrollment": 28
+    },
+    {
+      "code": "CS 4200",
+      "title": "Research Methods in Computing",
+      "level": "Undergraduate",
+      "semester": "Fall 2025",
+      "description": "Introduction to empirical research methods in computer science. Covers experimental design, statistical analysis, reproducibility, and scientific writing.",
+      "enrollment": 52
+    },
+    {
+      "code": "CS 8950",
+      "title": "Advanced Topics in HCI",
+      "level": "Graduate Seminar",
+      "semester": "Spring 2025",
+      "description": "Seminar course exploring cutting-edge research in human-computer interaction. Students read and discuss recent papers, present research, and develop project proposals.",
+      "enrollment": 15
+    }
+  ],
+  "experience": [
+    {
+      "title": "Assistant Professor",
+      "organization": "University of Utah — Dept. of Civil Engineering",
+      "description": "Leading research in HCI, accessibility, and reproducible methods. Teaching undergraduate and graduate courses.",
+      "years": "2022 — Present",
+      "icon": "monitor"
+    },
+    {
+      "title": "Postdoctoral Researcher",
+      "organization": "National Institute of Standards — HCI Division",
+      "description": "Developed accessibility evaluation frameworks and published 4 journal papers on inclusive interface design.",
+      "years": "2020 — 2022",
+      "icon": "globe"
+    },
+    {
+      "title": "Research Assistant",
+      "organization": "University of Utah — Interactive Systems Lab",
+      "description": "Contributed to 3 major research projects on assistive technology and user study design.",
+      "years": "2016 — 2020",
+      "icon": "pencil"
+    }
+  ],
+  "education": [
+    {
+      "title": "Ph.D. in Human-Computer Interaction",
+      "organization": "University of Utah",
+      "description": "Dissertation: \"Designing Inclusive Pipelines for Reproducible HCI Research.\" Advised by Prof. Example.",
+      "years": "2016 — 2020",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Utah_Utes_-_U_logo.svg/3840px-Utah_Utes_-_U_logo.svg.png"
+    },
+    {
+      "title": "M.S. in Computer Science",
+      "organization": "Massachusetts Institute of Technology",
+      "description": "Specialization in AI and Human Factors. Thesis on adaptive user interfaces.",
+      "years": "2014 — 2016",
+      "logo": "https://download.logo.wine/logo/Massachusetts_Institute_of_Technology/Massachusetts_Institute_of_Technology-Logo.wine.png"
+    },
+    {
+      "title": "B.S. in Cognitive Science",
+      "organization": "University of California, Berkeley",
+      "description": "Minor in CS. Graduated with honors. Capstone on accessibility in mobile apps.",
+      "years": "2010 — 2014",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/150px-Seal_of_University_of_California%2C_Berkeley.svg.png"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Paper Award",
+      "subtitle": "Conference X, 2024",
+      "url": "https://example.edu/best-paper",
+      "icon": "award",
+      "iconColor": "warm"
+    },
+    {
+      "title": "Demo Prize",
+      "subtitle": "Symposium Y, 2023",
+      "url": "https://example.edu/demo-prize",
+      "icon": "star",
+      "iconColor": "warm"
+    },
+    {
+      "title": "Graduate Fellowship",
+      "subtitle": "Foundation Z, 2021",
+      "url": "https://example.edu/fellowship",
+      "icon": "cap",
+      "iconColor": "warm"
+    },
+    {
+      "title": "UX Research Certificate",
+      "subtitle": "Provider A, 2023",
+      "url": "https://example.edu/ux-cert",
+      "icon": "monitor",
+      "iconColor": "accent"
+    },
+    {
+      "title": "Data Privacy Training",
+      "subtitle": "Provider B, 2022",
+      "url": "https://example.edu/privacy",
+      "icon": "shield",
+      "iconColor": "sage"
+    },
+    {
+      "title": "Open Source Contributor",
+      "subtitle": "Project C, 2022",
+      "url": "https://example.edu/oss",
+      "icon": "code",
+      "iconColor": "accent"
+    }
+  ],
+  "contact": {
+    "email": "rcmalo@university.edu",
+    "phone": "+1 (801) 555‑0199",
+    "office": "Room 312, Merrill Engineering Bldg",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.5!2d-111.84!3d40.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sUniversity+of+Utah!5e0!3m2!1sen!2sus",
+    "socials": [
+      {
+        "platform": "google-scholar",
+        "url": "https://scholar.google.com/citations?user=EXAMPLE"
+      },
+      {
+        "platform": "github",
+        "url": "https://github.com/example"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com/in/example"
+      },
+      {
+        "platform": "orcid",
+        "url": "https://orcid.org/0000-0000-0000-0000"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Dr. R.C. Malo",
+    "repoUrl": "https://github.com/riponcm/acadpro",
+    "designedBy": "Ripon Chandra Malo",
+    "version": "V2.0.0"
+  },
+  "settings": {
+    "publicationStyle": "alt",
+    "scholarId": "vZFqHosAAAAJ",
+    "_theme_options": "Available themes: 'BH' (default light), 'blue' (academic light blue), 'dark'",
+    "theme": "blue"
+  }
+}
