@@ -386,14 +386,14 @@
       "organization": "King's College London",
       "description": "Specialized postgraduate training in prosthodontics, advanced dental materials, and evidence-based clinical practice.",
       "years": "2019 — 2022",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/King%27s_College_London_logo.svg/200px-King%27s_College_London_logo.svg.png"
+      "logo": "images/education/kings-college-london.png"
     },
     {
       "title": "Doctor of Dental Surgery",
       "organization": "The University of Jordan",
       "description": "Comprehensive dental education covering all aspects of general dentistry, clinical practice, and patient care.",
       "years": "2011 — 2016",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/University_of_Jordan_crest.svg/150px-University_of_Jordan_crest.svg.png"
+      "logo": "images/education/university-of-jordan.png"
     }
   ],
   "awards": [
