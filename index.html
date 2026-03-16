@@ -318,7 +318,7 @@ function renderHero(p, projects, socials){
   
   const socialIcons={'google-scholar':ICONS.scholar,github:ICONS.github,linkedin:ICONS.li,orcid:ICONS.orcid,twitter:ICONS.x};
   const socialButtons = socials ? socials.map(s=>'<a class="social-btn" href="'+s.url+'" target="_blank" aria-label="'+s.platform+'" style="width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--card-border);display:grid;place-items:center;color:var(--accent);transition:all 0.2s;text-decoration:none;">'+(socialIcons[s.platform]||ICONS.globe)+'</a>').join('') : '';
-  const resumeButton = p.resumeUrl ? '<a class="social-btn" href="'+p.resumeUrl+'" target="_blank" download aria-label="Download CV" style="width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--card-border);display:grid;place-items:center;color:var(--accent);transition:all 0.2s;text-decoration:none;">'+ICONS.pdf+'</a>' : '';
+  const resumeButton = p.resumeUrl ? '<a class="social-btn" href="'+p.resumeUrl+'" target="_blank" download aria-label="Download CV" style="width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--card-border);display:grid;place-items:center;transition:all 0.2s;text-decoration:none;"><img src="https://icons.veryicon.com/png/o/miscellaneous/general-icon-library/resume-7.png" alt="Resume" style="width:24px;height:24px;"></a>' : '';
   const socialsHTML = (socialButtons || resumeButton) ? '<div class="hero-socials" style="margin-top:1.5rem;margin-bottom:1.5rem;display:flex;gap:0.5rem;">'+socialButtons+resumeButton+'</div>' : '';
   
   document.getElementById('heroSection').innerHTML=
@@ -535,7 +535,7 @@ function renderAwards(awards){
 function renderContact(c,name,resumeUrl){
   const socialIcons={'google-scholar':ICONS.scholar,github:ICONS.github,linkedin:ICONS.li,orcid:ICONS.orcid,twitter:ICONS.x};
   const socialsHTML=c.socials.map(s=>'<a class="social-btn" href="'+s.url+'" target="_blank" aria-label="'+s.platform+'">'+(socialIcons[s.platform]||ICONS.globe)+'</a>').join('');
-  const resumeBtn = resumeUrl ? '<a class="social-btn" href="'+resumeUrl+'" target="_blank" download aria-label="Download Resume">'+ICONS.pdf+'</a>' : '';
+  const resumeBtn = resumeUrl ? '<a class="social-btn" href="'+resumeUrl+'" target="_blank" download aria-label="Download Resume"><img src="https://icons.veryicon.com/png/o/miscellaneous/general-icon-library/resume-7.png" alt="Resume" style="width:24px;height:24px;"></a>' : '';
   document.getElementById('contactContent').innerHTML=
     '<div class="contact-grid"><aside class="contact-info" style="max-width: none;"><h3>Get in touch</h3><ul class="contact-list"><li class="contact-item"><div class="ci-icon">'+ICONS.user+'</div><div><div class="ci-label">Name</div>'+esc(name)+'</div></li><li class="contact-item"><div class="ci-icon">'+ICONS.mail+'</div><div><div class="ci-label">Email</div><a href="mailto:'+c.email+'">'+esc(c.email)+'</a></div></li><li class="contact-item"><div class="ci-icon">'+ICONS.phone+'</div><div><div class="ci-label">Phone</div><a href="tel:'+c.phone+'">'+esc(c.phone)+'</a></div></li><li class="contact-item"><div class="ci-icon">'+ICONS.pin+'</div><div><div class="ci-label">Office</div>'+esc(c.office)+'</div></li></ul><div class="socials">'+socialsHTML+resumeBtn+'</div></aside></div>';
 }
