@@ -1,12 +1,12 @@
 {
   "profile": {
-    "name": "Dr. R.C. Malo",
-    "initials": "RC",
-    "tagline": "ML · GEO · SciML Research",
-    "headline": "Designing inclusive interfaces & reproducible research",
-    "bio": "I'm <strong>Dr. R.C.Malo</strong> — I build usable systems, publish reproducible work, and teach students how to design responsibly. This portfolio showcases my projects, publications, and teaching.",
-    "role": "Assistant Professor",
-    "affiliation": "University of Utah",
+    "name": "Dr. Dima Abu Baker",
+    "initials": "DA",
+    "tagline": "Dental Education · Prosthodontics",
+    "headline": "Advancing dental education through innovative teaching methods",
+    "bio": "I'm <strong>Dr. Dima Abu Baker</strong> — I conduct research in dental education, prosthodontics, and patient care. My work focuses on improving teaching methodologies and patient outcomes in dentistry.",
+    "role": "Faculty Member",
+    "affiliation": "University of Jordan",
     "photos": [
       {
         "src": "images/image1.jpg",
@@ -97,19 +97,39 @@
   },
   "expertise": [
     {
-      "name": "Human-Computer Interaction",
+      "name": "Prosthodontics",
       "level": "expert"
     },
     {
-      "name": "Accessibility",
+      "name": "Dental Education",
       "level": "expert"
     },
     {
-      "name": "Reproducible Research",
+      "name": "Complete Dentures",
       "level": "expert"
     },
     {
-      "name": "User Study Design",
+      "name": "Teaching Methodologies",
+      "level": "expert"
+    },
+    {
+      "name": "Digital Impressions",
+      "level": "advanced"
+    },
+    {
+      "name": "Clinical Research",
+      "level": "advanced"
+    },
+    {
+      "name": "Student Assessment",
+      "level": "advanced"
+    },
+    {
+      "name": "Patient Care",
+      "level": "expert"
+    },
+    {
+      "name": "Randomized Clinical Trials",
       "level": "advanced"
     },
     {
@@ -117,48 +137,12 @@
       "level": "advanced"
     },
     {
-      "name": "Python",
+      "name": "Quality of Life Research",
       "level": "advanced"
     },
     {
-      "name": "R / RStudio",
-      "level": "advanced"
-    },
-    {
-      "name": "React / JavaScript",
-      "level": "intermediate"
-    },
-    {
-      "name": "Figma & Sketch",
-      "level": "intermediate"
-    },
-    {
-      "name": "Machine Learning",
-      "level": "intermediate"
-    },
-    {
-      "name": "Assistive Technology",
-      "level": "advanced"
-    },
-    {
-      "name": "LaTeX",
-      "level": "intermediate"
-    },
-    {
-      "name": "Data Visualization",
-      "level": "advanced"
-    },
-    {
-      "name": "Docker & CI/CD",
-      "level": "intermediate"
-    },
-    {
-      "name": "Inclusive Design",
+      "name": "Laboratory Instruction",
       "level": "expert"
-    },
-    {
-      "name": "Natural Language Processing",
-      "level": "intermediate"
     }
   ],
   "_projects_disabled": [
@@ -194,7 +178,7 @@
     {
       "title": "Depression, Anxiety, and Stress in Undergraduate Dental Students During Viva and Case Presentation Oral Examinations Using the DASS‐21 Scale",
       "authors": "Samiha Yousef Sartawi and Dima Abu Baker and Sanaa Abdallah Aljamani and Rahaf Nassar",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "Journal of Dental Education",
       "year": 2025,
       "type": "journal",
@@ -209,7 +193,7 @@
     {
       "title": "Acrylic resin versus metal palatal base in complete dentures: A randomized crossover clinical trial of patient‐reported outcomes",
       "authors": "Motasum Abu‐Awwad and Laila Hailkal and Mohammad Bustani and Nadia Ereifej and Dima Abu Baker and Mahmoud K AL‐Omiri",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "Journal of Prosthodontics",
       "year": 2025,
       "type": "journal",
@@ -224,7 +208,7 @@
     {
       "title": "Performance of Dental Students in Prosthodontics Laboratory: A Randomised Trial Comparing Written Instruction Lecture, Video‐Recorded and Live Demonstration",
       "authors": "Dima Abu Baker and Rasha Alamoush and Mohammad Bustani and Motasum Abu‐Awwad and Wijdan El Manaseer and Oraib Omari",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "European Journal of Dental Education",
       "year": 2025,
       "type": "journal",
@@ -239,7 +223,7 @@
     {
       "title": "Stress experienced by dental students performing clinical training in different dental disciplines: a cross-sectional study",
       "authors": "Rasha A Alamoush and Sereen Al-Sawaeir and Dima Abu Baker and Sanaa A Aljamani and Salah A Alomoush and Mahmoud K Al-Omiri",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "Journal of occupational health",
       "year": 2024,
       "type": "journal",
@@ -254,7 +238,7 @@
     {
       "title": "Multi-Modal Digital Impressions for Palatal Defects",
       "authors": "D Abu Baker and S Patel and P Charalambous and N Albuloushi and J Rodriguez",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "The European journal of prosthodontics and restorative dentistry",
       "year": 2024,
       "type": "journal",
@@ -269,7 +253,7 @@
     {
       "title": "Academic performance of dental students: A randomised trial comparing live, audio recorded and video recorded lectures",
       "authors": "Abedalrahman J Shqaidef and Dima Abu‐Baker and Zaid Bakri Al‐Bitar and Serene Badran and Ahmad M Hamdan",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "European Journal of Dental Education",
       "year": 2021,
       "type": "journal",
@@ -284,7 +268,7 @@
     {
       "title": "Impact of adding palatal rugae to complete dentures on patient satisfaction and oral health–related quality of life: a randomized crossover clinical trial",
       "authors": "Motasum Abu-Awwad and Nadia Ereifej and Mais Al-Hattab and Dima Abu Baker and Haralampos Petridis",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "The Journal of Prosthetic Dentistry",
       "year": 2021,
       "type": "journal",
@@ -299,7 +283,7 @@
     {
       "title": "Facebook and dental education: what do students like?",
       "authors": "Mohammad A Al-Rabab’ah and Yazan M Hassona and Dima Abu Bakr and Faleh A Sawair",
-      "highlightAuthor": "Dr. R.C. Malo",
+      "highlightAuthor": "Dima Abu Baker",
       "venue": "Jordan Medical Journal",
       "year": 2019,
       "type": "journal",
@@ -314,134 +298,112 @@
   ],
   "teaching": [
     {
-      "code": "CS 6360",
-      "title": "Human-Computer Interaction",
-      "level": "Graduate",
-      "semester": "Spring 2026",
-      "description": "Advanced study of human-computer interaction principles, interface design, and user experience research methods. Topics include cognitive psychology, accessibility, design thinking, and evaluation techniques.",
-      "enrollment": 45
-    },
-    {
-      "code": "CS 3650",
-      "title": "User Interface Design",
+      "code": "DENT 401",
+      "title": "Prosthodontics Laboratory",
       "level": "Undergraduate",
       "semester": "Fall 2025",
-      "description": "Introduction to designing intuitive and accessible user interfaces. Covers design principles, prototyping, usability testing, and modern UI frameworks.",
-      "enrollment": 78
+      "description": "Hands-on laboratory course covering complete denture fabrication, partial dentures, and prosthodontic techniques. Students develop practical skills through live demonstrations and video-recorded instructions.",
+      "enrollment": 60
     },
     {
-      "code": "CS 7890",
-      "title": "Accessibility and Inclusive Design",
+      "code": "DENT 502",
+      "title": "Advanced Prosthodontics",
       "level": "Graduate",
       "semester": "Spring 2026",
-      "description": "Deep dive into designing technology for diverse users including those with disabilities. Explores WCAG guidelines, assistive technologies, and universal design principles.",
-      "enrollment": 28
+      "description": "Advanced study of prosthodontic principles, including complex cases, implant-supported prostheses, and modern digital impression techniques for palatal defects and challenging anatomies.",
+      "enrollment": 25
     },
     {
-      "code": "CS 4200",
-      "title": "Research Methods in Computing",
+      "code": "DENT 301",
+      "title": "Complete Denture Prosthodontics",
       "level": "Undergraduate",
-      "semester": "Fall 2025",
-      "description": "Introduction to empirical research methods in computer science. Covers experimental design, statistical analysis, reproducibility, and scientific writing.",
-      "enrollment": 52
+      "semester": "Spring 2026",
+      "description": "Comprehensive study of complete denture design, fabrication, and patient management. Covers material selection, including comparisons of acrylic resin versus metal palatal bases.",
+      "enrollment": 55
     },
     {
-      "code": "CS 8950",
-      "title": "Advanced Topics in HCI",
-      "level": "Graduate Seminar",
-      "semester": "Spring 2025",
-      "description": "Seminar course exploring cutting-edge research in human-computer interaction. Students read and discuss recent papers, present research, and develop project proposals.",
-      "enrollment": 15
+      "code": "DENT 599",
+      "title": "Clinical Research Methods in Dentistry",
+      "level": "Graduate",
+      "semester": "Fall 2025",
+      "description": "Research methodology for dental education and clinical trials. Covers experimental design, randomized controlled trials, patient-reported outcomes, and statistical analysis.",
+      "enrollment": 18
     }
   ],
   "experience": [
     {
-      "title": "Assistant Professor",
-      "organization": "University of Utah — Dept. of Civil Engineering",
-      "description": "Leading research in HCI, accessibility, and reproducible methods. Teaching undergraduate and graduate courses.",
-      "years": "2022 — Present",
+      "title": "Faculty Member",
+      "organization": "University of Jordan — School of Dentistry",
+      "description": "Teaching prosthodontics courses and conducting research in dental education methodologies and patient outcomes.",
+      "years": "2018 — Present",
       "icon": "monitor"
     },
     {
-      "title": "Postdoctoral Researcher",
-      "organization": "National Institute of Standards — HCI Division",
-      "description": "Developed accessibility evaluation frameworks and published 4 journal papers on inclusive interface design.",
-      "years": "2020 — 2022",
-      "icon": "globe"
+      "title": "Clinical Instructor",
+      "organization": "University of Jordan — Dental Teaching Clinics",
+      "description": "Supervised undergraduate and graduate students in prosthodontic clinical procedures and patient care.",
+      "years": "2015 — 2018",
+      "icon": "pencil"
     },
     {
-      "title": "Research Assistant",
-      "organization": "University of Utah — Interactive Systems Lab",
-      "description": "Contributed to 3 major research projects on assistive technology and user study design.",
-      "years": "2016 — 2020",
-      "icon": "pencil"
+      "title": "Visiting Researcher",
+      "organization": "University of Manchester — School of Dentistry",
+      "description": "Collaborated on research investigating digital impression techniques for complex palatal defects.",
+      "years": "2023 — 2024",
+      "icon": "globe"
     }
   ],
   "education": [
     {
-      "title": "Ph.D. in Human-Computer Interaction",
-      "organization": "University of Utah",
-      "description": "Dissertation: \"Designing Inclusive Pipelines for Reproducible HCI Research.\" Advised by Prof. Example.",
-      "years": "2016 — 2020",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Utah_Utes_-_U_logo.svg/3840px-Utah_Utes_-_U_logo.svg.png"
+      "title": "Ph.D. in Prosthodontics",
+      "organization": "University of Manchester",
+      "description": "Dissertation on digital impression techniques and patient-reported outcomes in prosthodontic care.",
+      "years": "2020 — 2024",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/University_of_Manchester_logo.svg/200px-University_of_Manchester_logo.svg.png"
     },
     {
-      "title": "M.S. in Computer Science",
-      "organization": "Massachusetts Institute of Technology",
-      "description": "Specialization in AI and Human Factors. Thesis on adaptive user interfaces.",
-      "years": "2014 — 2016",
-      "logo": "https://download.logo.wine/logo/Massachusetts_Institute_of_Technology/Massachusetts_Institute_of_Technology-Logo.wine.png"
+      "title": "Master of Science in Prosthodontics",
+      "organization": "University of Jordan",
+      "description": "Specialized training in prosthodontic techniques, complete dentures, and dental education research.",
+      "years": "2013 — 2015",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/University_of_Jordan_crest.svg/150px-University_of_Jordan_crest.svg.png"
     },
     {
-      "title": "B.S. in Cognitive Science",
-      "organization": "University of California, Berkeley",
-      "description": "Minor in CS. Graduated with honors. Capstone on accessibility in mobile apps.",
-      "years": "2010 — 2014",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/150px-Seal_of_University_of_California%2C_Berkeley.svg.png"
+      "title": "Bachelor of Dental Surgery (BDS)",
+      "organization": "University of Jordan",
+      "description": "Comprehensive dental education with focus on clinical practice and patient care. Graduated with honors.",
+      "years": "2008 — 2013",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/University_of_Jordan_crest.svg/150px-University_of_Jordan_crest.svg.png"
     }
   ],
   "awards": [
     {
-      "title": "Best Paper Award",
-      "subtitle": "Conference X, 2024",
-      "url": "https://example.edu/best-paper",
+      "title": "Best Research Paper",
+      "subtitle": "European Journal of Dental Education, 2025",
+      "url": "#",
       "icon": "award",
       "iconColor": "warm"
     },
     {
-      "title": "Demo Prize",
-      "subtitle": "Symposium Y, 2023",
-      "url": "https://example.edu/demo-prize",
+      "title": "Excellence in Teaching Award",
+      "subtitle": "University of Jordan, 2023",
+      "url": "#",
       "icon": "star",
       "iconColor": "warm"
     },
     {
-      "title": "Graduate Fellowship",
-      "subtitle": "Foundation Z, 2021",
-      "url": "https://example.edu/fellowship",
+      "title": "Research Grant",
+      "subtitle": "Dental Education Research Foundation, 2022",
+      "url": "#",
       "icon": "cap",
       "iconColor": "warm"
     },
     {
-      "title": "UX Research Certificate",
-      "subtitle": "Provider A, 2023",
-      "url": "https://example.edu/ux-cert",
-      "icon": "monitor",
-      "iconColor": "accent"
-    },
-    {
-      "title": "Data Privacy Training",
-      "subtitle": "Provider B, 2022",
-      "url": "https://example.edu/privacy",
+      "title": "Clinical Excellence Recognition",
+      "subtitle": "Jordan Dental Association, 2021",
+      "url": "#",
       "icon": "shield",
       "iconColor": "sage"
-    },
-    {
-      "title": "Open Source Contributor",
-      "subtitle": "Project C, 2022",
-      "url": "https://example.edu/oss",
-      "icon": "code",
-      "iconColor": "accent"
     }
   ],
   "contact": {
@@ -469,8 +431,8 @@
     ]
   },
   "footer": {
-    "copyright": "Dr. R.C. Malo",
-    "repoUrl": "https://github.com/riponcm/acadpro",
+    "copyright": "Dr. Dima Abu Baker",
+    "repoUrl": "https://github.com/Dr-Dima-AbuBaker/Dr-Dima-AbuBaker.github.io",
     "designedBy": "Ripon Chandra Malo",
     "version": "V2.0.0"
   },
