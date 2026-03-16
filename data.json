@@ -355,24 +355,17 @@
   ],
   "education": [
     {
-      "title": "Ph.D. in Prosthodontics",
-      "organization": "University of Manchester",
-      "description": "Dissertation on digital impression techniques and patient-reported outcomes in prosthodontic care.",
-      "years": "2020 — 2024",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/University_of_Manchester_logo.svg/200px-University_of_Manchester_logo.svg.png"
+      "title": "Master's in Clinical Dentistry in Prosthodontics",
+      "organization": "King's College London",
+      "description": "Specialized postgraduate training in prosthodontics, advanced dental materials, and evidence-based clinical practice.",
+      "years": "2019 — 2022",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/King%27s_College_London_logo.svg/200px-King%27s_College_London_logo.svg.png"
     },
     {
-      "title": "Master of Science in Prosthodontics",
-      "organization": "University of Jordan",
-      "description": "Specialized training in prosthodontic techniques, complete dentures, and dental education research.",
-      "years": "2013 — 2015",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/University_of_Jordan_crest.svg/150px-University_of_Jordan_crest.svg.png"
-    },
-    {
-      "title": "Bachelor of Dental Surgery (BDS)",
-      "organization": "University of Jordan",
-      "description": "Comprehensive dental education with focus on clinical practice and patient care. Graduated with honors.",
-      "years": "2008 — 2013",
+      "title": "Doctor of Dental Surgery",
+      "organization": "The University of Jordan",
+      "description": "Comprehensive dental education covering all aspects of general dentistry, clinical practice, and patient care.",
+      "years": "2011 — 2016",
       "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/University_of_Jordan_crest.svg/150px-University_of_Jordan_crest.svg.png"
     }
   ],
