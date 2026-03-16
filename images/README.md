@@ -4,21 +4,41 @@ This folder contains all images used in the portfolio.
 
 ## Structure
 
-- **`publications/`** - Images and thumbnails for research papers
-  - Use format: `paperX-full.jpg` (600×300px) and `paperX-thumb.jpg` (200×200px)
+- **`profile/`** - Profile photos and headshots (carousel)
+  - Recommended: 800×800px or larger
+  - Format: `photo1.jpg`, `photo2.jpg`, etc.
   
-- **`profile/`** - Profile photos and headshots
-  - Recommended size: 800×800px or larger
+- **`publications/`** - Images and thumbnails for research papers
+  - Full images: 600×300px (`paper1-full.jpg`)
+  - Thumbnails: 200×200px (`paper1-thumb.jpg`)
+  
+- **`projects/`** - Project showcase images
+  - Recommended: 600×300px
+  - Format: `project-name.jpg`
+  
+- **`lab/`** - Lab member headshots
+  - Recommended: 150×150px (square)
+  - Format: `firstname-lastname.jpg`
 
 ## Adding Images
 
 1. Add your images to the appropriate subfolder
-2. Update the paths in `data.json`:
+2. Update the paths in `data.json` to use relative paths:
    ```json
-   "image": "images/publications/paper1-full.jpg",
-   "thumbnail": "images/publications/paper1-thumb.jpg"
+   {
+     "src": "images/profile/photo1.jpg",
+     "image": "images/publications/paper1-full.jpg",
+     "thumbnail": "images/publications/paper1-thumb.jpg"
+   }
    ```
 
-## Placeholder
+## Migration Steps
 
-Until you add custom images, the site will use a default placeholder image.
+To move from external URLs to local hosting:
+
+1. Download the images you want to keep
+2. Place them in the appropriate folders
+3. Update `data.json` with the new paths
+4. Commit and push to GitHub
+
+GitHub Pages will serve these automatically from your repo.
