@@ -332,25 +332,32 @@
   ],
   "experience": [
     {
-      "title": "Faculty Member",
-      "organization": "University of Jordan — School of Dentistry",
-      "description": "Teaching prosthodontics courses and conducting research in dental education methodologies and patient outcomes.",
-      "years": "2018 — Present",
+      "title": "Assistant Professor in Prosthodontics",
+      "organization": "School of Dentistry, The University of Jordan",
+      "description": "Created brand new course offerings for undergraduate and graduate students. Developed in-depth lectures and course materials based on research and learning objectives. Collaborated with colleagues to improve department function and student engagement.",
+      "years": "Nov 2022 — Present",
       "icon": "monitor"
     },
     {
-      "title": "Clinical Instructor",
-      "organization": "University of Jordan — Dental Teaching Clinics",
-      "description": "Supervised undergraduate and graduate students in prosthodontic clinical procedures and patient care.",
-      "years": "2015 — 2018",
+      "title": "Consultant in Prosthodontics",
+      "organization": "The University of Jordan Hospital",
+      "description": "Provided comprehensive prosthodontic care including implant-supported prostheses, crowns, bridges, and removable dentures. Developed treatment plans for facial pain and TMDs. Supported functional and aesthetic enhancements for patients with traumatic injuries or birth defects.",
+      "years": "Apr 2022 — Present",
+      "icon": "globe"
+    },
+    {
+      "title": "Teaching and Research Assistant",
+      "organization": "Department of Prosthodontics, The University of Jordan",
+      "description": "Taught undergraduate level courses and supervised laboratory work. Evaluated and graded examinations, provided feedback to students, and helped develop improvement strategies.",
+      "years": "Oct 2018 — Sep 2019",
       "icon": "pencil"
     },
     {
-      "title": "Visiting Researcher",
-      "organization": "University of Manchester — School of Dentistry",
-      "description": "Collaborated on research investigating digital impression techniques for complex palatal defects.",
-      "years": "2023 — 2024",
-      "icon": "globe"
+      "title": "Chief General Dentist",
+      "organization": "Orange Dental Clinics",
+      "description": "Examined oral structures to diagnose problems and develop treatment plans. Provided cosmetic dentistry services and patient education. Collaborated with restorative dentists and orthodontists on comprehensive treatment plans.",
+      "years": "Aug 2017 — Oct 2018",
+      "icon": "monitor"
     }
   ],
   "education": [
