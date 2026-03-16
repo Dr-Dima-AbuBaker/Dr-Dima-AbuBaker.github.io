@@ -143,6 +143,26 @@
     {
       "name": "Laboratory Instruction",
       "level": "expert"
+    },
+    {
+      "name": "Digital Dentistry",
+      "level": "expert"
+    },
+    {
+      "name": "Digital Technologies in Removable Prosthodontics",
+      "level": "expert"
+    },
+    {
+      "name": "Maxillo-Facial Prosthodontics",
+      "level": "expert"
+    },
+    {
+      "name": "Dental Materials",
+      "level": "expert"
+    },
+    {
+      "name": "Erosive Tooth Wear Management",
+      "level": "advanced"
     }
   ],
   "_projects_disabled": [
