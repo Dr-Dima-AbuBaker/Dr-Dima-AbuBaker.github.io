@@ -312,28 +312,44 @@
   ],
   "teaching": [
     {
-      "title": "Lecture 1 — Intro to HCI",
-      "subtitle": "Syllabus & overview",
-      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
-      "bgColor": "#2d5a7b"
+      "code": "CS 6360",
+      "title": "Human-Computer Interaction",
+      "level": "Graduate",
+      "semester": "Spring 2026",
+      "description": "Advanced study of human-computer interaction principles, interface design, and user experience research methods. Topics include cognitive psychology, accessibility, design thinking, and evaluation techniques.",
+      "enrollment": 45
     },
     {
-      "title": "Lecture 2 — Accessibility",
-      "subtitle": "Designing for diverse users",
-      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
-      "bgColor": "#5a7a6a"
+      "code": "CS 3650",
+      "title": "User Interface Design",
+      "level": "Undergraduate",
+      "semester": "Fall 2025",
+      "description": "Introduction to designing intuitive and accessible user interfaces. Covers design principles, prototyping, usability testing, and modern UI frameworks.",
+      "enrollment": 78
     },
     {
-      "title": "Lecture 3 — Research Methods",
-      "subtitle": "Study design & reproducibility",
-      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
-      "bgColor": "#c8956c"
+      "code": "CS 7890",
+      "title": "Accessibility and Inclusive Design",
+      "level": "Graduate",
+      "semester": "Spring 2026",
+      "description": "Deep dive into designing technology for diverse users including those with disabilities. Explores WCAG guidelines, assistive technologies, and universal design principles.",
+      "enrollment": 28
     },
     {
-      "title": "Lecture 4 — Tools",
-      "subtitle": "Analysis & visualization",
-      "videoUrl": "https://www.youtube.com/embed/Gl5MVtD3flQ",
-      "bgColor": "#1a1a2e"
+      "code": "CS 4200",
+      "title": "Research Methods in Computing",
+      "level": "Undergraduate",
+      "semester": "Fall 2025",
+      "description": "Introduction to empirical research methods in computer science. Covers experimental design, statistical analysis, reproducibility, and scientific writing.",
+      "enrollment": 52
+    },
+    {
+      "code": "CS 8950",
+      "title": "Advanced Topics in HCI",
+      "level": "Graduate Seminar",
+      "semester": "Spring 2025",
+      "description": "Seminar course exploring cutting-edge research in human-computer interaction. Students read and discuss recent papers, present research, and develop project proposals.",
+      "enrollment": 15
     }
   ],
   "experience": [

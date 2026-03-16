@@ -165,6 +165,16 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
 .video-info{padding:0.8rem 1rem}
 .video-info h4{font-size:0.9rem;font-weight:600;margin-bottom:0.15rem}
 .video-info p{font-size:0.8rem;color:var(--muted)}
+.course-list{display:flex;flex-direction:column;gap:1rem;max-width:900px;margin:0 auto}
+.course-item{background:var(--card);border:1px solid var(--card-border);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow);transition:all var(--transition)}
+.course-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px)}
+.course-header{display:flex;flex-wrap:wrap;gap:0.8rem;margin-bottom:0.7rem;align-items:center}
+.course-code{font-family:var(--mono);font-size:0.85rem;font-weight:700;color:var(--accent);background:var(--surface);padding:0.3rem 0.7rem;border-radius:6px}
+.course-level{font-size:0.75rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:0.04em}
+.course-semester{font-size:0.75rem;color:var(--muted);margin-left:auto}
+.course-title{font-family:var(--serif);font-size:1.2rem;font-weight:600;margin-bottom:0.6rem;color:var(--text)}
+.course-desc{font-size:0.9rem;line-height:1.6;color:var(--muted);margin-bottom:0.6rem}
+.course-meta{font-size:0.8rem;color:var(--muted);font-style:italic}
 .contact-grid{display:grid;gap:1rem}
 @media(min-width:860px){.contact-grid{grid-template-columns:1fr 340px}}
 .map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-border);min-height:260px;box-shadow:var(--shadow)}
@@ -237,7 +247,7 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
 <section class="section" id="expertise"><div class="section-header"><h2>Areas of Expertise</h2><p>Core skills and research domains — hover for proficiency level.</p></div><div class="expertise-cloud" id="expertiseCloud"></div></section>
 <section class="section" id="projects"><div class="section-header"><h2>Projects</h2><p>Selected projects with demos, source code, and documentation.</p></div><div class="grid g3" id="projectsGrid"></div></section>
 <section class="section" id="publications"><div class="section-header"><h2>Publications</h2><p>Selected publications with BibTeX, PDF download, and sharing.</p></div><div id="pubContent"></div></section>
-<section class="section" id="teaching"><div class="section-header"><h2>Teaching — Sample Lectures</h2><p>Click any tile to watch in a modal.</p></div><div class="grid g4" id="teachingGrid"></div></section>
+<section class="section" id="teaching"><div class="section-header"><h2>Teaching</h2><p>Courses I teach at the University of Utah.</p></div><div id="teachingGrid"></div></section>
 <section class="section" id="experience"><div class="section-header"><h2>Experience &amp; Education</h2></div><div id="expTabsContainer"></div></section>
 <section class="section" id="awards"><div class="section-header"><h2>Awards &amp; Certifications</h2></div><div class="grid g3" id="awardsGrid"></div></section>
 <section class="section" id="contact"><div class="section-header"><h2>Contact</h2></div><div id="contactContent"></div></section>
@@ -494,10 +504,10 @@ function renderLab(lab, profile) {
   });
 }
 
-function renderTeaching(lectures){
-  document.getElementById('teachingGrid').innerHTML=lectures.map(l=>
-    '<div class="video-card reveal" data-video="'+l.videoUrl+'"><div class="video-thumb"><svg class="bg-art" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice"><rect width="400" height="280" fill="'+l.bgColor+'"/><circle cx="200" cy="140" r="80" fill="#fff" opacity=".05"/></svg><div class="play-circle">'+ICONS.play+'</div></div><div class="video-info"><h4>'+esc(l.title)+'</h4><p>'+esc(l.subtitle)+'</p></div></div>'
-  ).join('');
+function renderTeaching(courses){
+  document.getElementById('teachingGrid').innerHTML='<div class="course-list">'+courses.map(c=>
+    '<div class="course-item reveal"><div class="course-header"><span class="course-code">'+esc(c.code)+'</span><span class="course-level">'+esc(c.level)+'</span><span class="course-semester">'+esc(c.semester)+'</span></div><h4 class="course-title">'+esc(c.title)+'</h4><p class="course-desc">'+esc(c.description)+'</p>'+(c.enrollment?'<div class="course-meta">Enrollment: '+c.enrollment+' students</div>':'')+'</div>'
+  ).join('')+'</div>';
 }
 
 function renderExperience(exp,edu){
@@ -619,15 +629,7 @@ function initPubFilter(){
 }
 
 function initVideo(){
-  var ytReady=false,ytPlayer=null;
-  var tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
-  window.onYouTubeIframeAPIReady=function(){ytReady=true};
-  document.querySelectorAll('.video-card').forEach(c=>{c.addEventListener('click',()=>{
-    var s=c.dataset.video;if(!s)return;var vid=s.split('/embed/')[1];if(!vid)return;vid=vid.split('?')[0];
-    openModal('<div id="ytPlayerWrap" style="position:relative;padding-top:56.25%;background:#000"><div id="ytPlayerDiv" style="position:absolute;inset:0"></div></div>');
-    setTimeout(()=>{if(ytReady&&window.YT){if(ytPlayer&&ytPlayer.destroy)try{ytPlayer.destroy()}catch(e){}ytPlayer=new YT.Player('ytPlayerDiv',{width:'100%',height:'100%',videoId:vid,playerVars:{autoplay:1,rel:0,modestbranding:1,playsinline:1},events:{onError:function(){document.getElementById('ytPlayerWrap').innerHTML='<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;position:absolute;inset:0;color:#fff;gap:1rem"><p>Unable to play inline</p><a href="https://www.youtube.com/watch?v='+vid+'" target="_blank" rel="noopener" style="padding:0.6rem 1.2rem;border-radius:10px;background:#ff0000;color:#fff;text-decoration:none;font-weight:700">Watch on YouTube</a></div>'}}})}else{document.getElementById('ytPlayerWrap').innerHTML='<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;position:absolute;inset:0;color:#fff;gap:1rem"><p>Loading...</p><a href="https://www.youtube.com/watch?v='+vid+'" target="_blank" rel="noopener" style="padding:0.6rem 1.2rem;border-radius:10px;background:#ff0000;color:#fff;text-decoration:none;font-weight:700">Watch on YouTube</a></div>'}},300);
-  })});
-  window._ytPlayer=ytPlayer;
+  // Video functionality removed - teaching section now displays course list
 }
 
 function initReveal(){
