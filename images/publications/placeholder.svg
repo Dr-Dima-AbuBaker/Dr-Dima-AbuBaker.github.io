@@ -1,0 +1,5 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#f0f0f0"/>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="20" fill="#999" text-anchor="middle">Publication Image</text>
+  <text x="300" y="170" font-family="Arial, sans-serif" font-size="14" fill="#bbb" text-anchor="middle">Replace with paper figure or diagram</text>
+</svg>

@@ -36,8 +36,8 @@ except ImportError:
 
 DATA_FILE = "data.json"
 BACKUP_FILE = "data.backup.json"
-PLACEHOLDER_IMAGE = "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=300&fit=crop"
-PLACEHOLDER_THUMB = "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=200&h=200&fit=crop"
+PLACEHOLDER_IMAGE = "images/publications/placeholder.svg"
+PLACEHOLDER_THUMB = "images/publications/placeholder-thumb.svg"
 
 
 def load_data():
