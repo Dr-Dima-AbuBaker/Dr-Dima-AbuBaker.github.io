@@ -446,9 +446,7 @@
     ]
   },
   "footer": {
-    "copyright": "Dr. Dima Abu Baker",
-    "repoUrl": "https://github.com/Dr-Dima-AbuBaker/Dr-Dima-AbuBaker.github.io",
-    "version": "V2.0.0"
+    "copyright": "Dr. Dima Abu Baker"
   },
   "settings": {
     "publicationStyle": "alt",
