@@ -240,10 +240,10 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
 <main class="wrap" id="top">
 <!-- All sections rendered by JS -->
 <div id="heroSection"></div>
-<div id="hiringSection"></div>
-<section class="section" id="lab" style="padding-top: 2rem;">
+<!-- <div id="hiringSection"></div> -->
+<!-- <section class="section" id="lab" style="padding-top: 2rem;">
   <div id="labContent"></div>
-</section>
+</section> -->
 <section class="section" id="expertise"><div class="section-header"><h2>Areas of Expertise</h2><p>Core skills and research domains — hover for proficiency level.</p></div><div class="expertise-cloud" id="expertiseCloud"></div></section>
 <!-- <section class="section" id="projects"><div class="section-header"><h2>Projects</h2><p>Selected projects with demos, source code, and documentation.</p></div><div class="grid g3" id="projectsGrid"></div></section> -->
 <section class="section" id="publications"><div class="section-header"><h2>Publications</h2><p>Selected publications with BibTeX, PDF download, and sharing.</p></div><div id="pubContent"></div></section>
@@ -684,8 +684,8 @@ fetch('data.json').then(r=>r.json()).then(D=>{
   }
 
   renderHero(D.profile, D.projects);
-  renderHiring(D.hiring);
-  renderLab(D.lab, D.profile);
+  // renderHiring(D.hiring);
+  // renderLab(D.lab, D.profile);
   renderExpertise(D.expertise);
   if(D.projects && D.projects.length > 0) renderProjects(D.projects);
   renderPublications(D.publications,pubStyle);

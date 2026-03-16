@@ -22,12 +22,12 @@
       }
     ]
   },
-  "hiring": {
+  "_hiring_disabled": {
     "enabled": true,
     "title": "Open to Collaboration & Hiring",
     "description": "I'm actively seeking research collaborators, postdoctoral fellows, and motivated graduate students interested in human-computer interaction, accessibility, and reproducible research methods. If you share a passion for inclusive design and rigorous experimentation, let's build something meaningful together."
   },
-  "lab": {
+  "_lab_disabled": {
     "title": "Advanced Systems & Learning Lab",
     "description": "Our lab focuses on building usable systems, publishing reproducible work, and designing responsibly. We explore the intersection of human-computer interaction, machine learning, and accessibility to solve real-world problems. We prioritize hands-on projects, rigorous experiments, and open-source contributions.",
     "directorName": "Dr. R.C. Malo",
