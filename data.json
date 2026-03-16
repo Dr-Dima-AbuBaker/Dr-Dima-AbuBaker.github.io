@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "title": "Your Academic Title",
+    "institution": "Your Institution",
+    "email": "your@email.com",
+    "photo": "screenshots/hero.png"
+  },
+  "about": "Brief description about your lab or research.",
+  "expertise": ["AI", "ML", "Data Science"],
+  "projects": [
+    {"title": "Project 1", "description": "Description of project 1."},
+    {"title": "Project 2", "description": "Description of project 2."}
+  ],
+  "publications": [
+    {"title": "Publication 1", "authors": "Author A, Author B", "year": 2025},
+    {"title": "Publication 2", "authors": "Author C", "year": 2024}
+  ],
+  "teaching": ["Course 1", "Course 2"],
+  "experience": [
+    {"role": "Position 1", "years": "2020-2023"},
+    {"role": "Position 2", "years": "2018-2020"}
+  ],
+  "education": [
+    {"degree": "PhD", "field": "Field Name", "year": 2018}
+  ],
+  "awards": ["Award 1", "Award 2"],
+  "contact": {
+    "email": "your@email.com",
+    "socials": {
+      "twitter": "https://twitter.com/yourprofile",
+      "linkedin": "https://linkedin.com/in/yourprofile"
+    }
+  }
+}
