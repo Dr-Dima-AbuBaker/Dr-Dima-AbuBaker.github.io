@@ -5,8 +5,8 @@
     "tagline": "Dental Education · Prosthodontics",
     "headline": "Advancing dental education through innovative teaching methods",
     "bio": "I'm <strong>Dr. Dima Abu Baker</strong> — I conduct research in dental education, prosthodontics, and patient care. My work focuses on improving teaching methodologies and patient outcomes in dentistry.",
-    "role": "Faculty Member",
-    "affiliation": "University of Jordan",
+    "role": "Assistant Professor",
+    "affiliation": "University of the Pacific",
     "photos": [
       {
         "src": "images/image1.jpg",
@@ -352,10 +352,17 @@
   ],
   "experience": [
     {
+      "title": "Assistant Professor",
+      "organization": "Arthur A. Dugoni School of Dentistry, University of the Pacific",
+      "description": "Teaching dental students in prosthodontics and dental education. Developing innovative teaching methodologies and conducting research in digital dentistry and prosthodontics education.",
+      "years": "2026 — Present",
+      "icon": "monitor"
+    },
+    {
       "title": "Assistant Professor in Prosthodontics",
       "organization": "School of Dentistry, The University of Jordan",
       "description": "Created brand new course offerings for undergraduate and graduate students. Developed in-depth lectures and course materials based on research and learning objectives. Collaborated with colleagues to improve department function and student engagement.",
-      "years": "Nov 2022 — Present",
+      "years": "Nov 2022 — 2026",
       "icon": "monitor"
     },
     {
