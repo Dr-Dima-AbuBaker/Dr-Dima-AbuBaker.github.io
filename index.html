@@ -303,7 +303,7 @@ function shareDropdownHTML(title,url){
 // ============================================================
 // RENDER FUNCTIONS
 // ============================================================
-function renderHero(p, projects){
+function renderHero(p, projects, socials){
   const manual = (p.photos || []).map(ph => ({ src: ph.src, alt: ph.alt, title: '' }));
   const proj = (projects || []).filter(pr => pr.image).map(pr => ({ src: pr.image, alt: pr.title, title: pr.title }));
   const allPhotos = [...manual, ...proj];
@@ -316,8 +316,11 @@ function renderHero(p, projects){
   
   const dots=allPhotos.map((ph,i)=>'<button class="photo-dot'+(i===0?' active':'')+'" data-i="'+i+'"></button>').join('');
   
+  const socialIcons={'google-scholar':ICONS.scholar,github:ICONS.github,linkedin:ICONS.li,orcid:ICONS.orcid,twitter:ICONS.x};
+  const socialsHTML = socials ? '<div class="hero-socials" style="margin-top:1.5rem;display:flex;gap:0.5rem;">'+socials.map(s=>'<a class="social-btn" href="'+s.url+'" target="_blank" aria-label="'+s.platform+'" style="width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--card-border);display:grid;place-items:center;color:var(--accent);transition:all 0.2s;text-decoration:none;">'+(socialIcons[s.platform]||ICONS.globe)+'</a>').join('')+'</div>' : '';
+  
   document.getElementById('heroSection').innerHTML=
-    '<section class="hero"><div class="hero-text reveal"><div class="kicker">Welcome</div><h1>'+p.headline+'</h1><p class="lead">'+p.bio+'</p><div class="hero-actions"><a class="btn-primary" href="#publications">'+ICONS.grid+'View Publications</a><a class="btn-outline" href="#teaching">Teaching</a></div><div class="hero-role">'+ICONS.user+' '+esc(p.role)+' · '+esc(p.affiliation)+'</div></div><div class="featured-card reveal"><div class="photo-carousel" id="photoCarousel"><div class="photo-track" id="photoTrack">'+slides+'</div><div class="photo-dots" id="photoDots">'+dots+'</div></div><div class="carousel-nav"><button class="car-btn" id="photoPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button><button class="car-btn" id="photoNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button></div></div></section>';
+    '<section class="hero"><div class="hero-text reveal"><div class="kicker">Welcome</div><h1>'+p.headline+'</h1><p class="lead">'+p.bio+'</p>'+socialsHTML+'<div class="hero-actions"><a class="btn-primary" href="#publications">'+ICONS.grid+'View Publications</a><a class="btn-outline" href="#teaching">Teaching</a></div><div class="hero-role">'+ICONS.user+' '+esc(p.role)+' · '+esc(p.affiliation)+'</div></div><div class="featured-card reveal"><div class="photo-carousel" id="photoCarousel"><div class="photo-track" id="photoTrack">'+slides+'</div><div class="photo-dots" id="photoDots">'+dots+'</div></div><div class="carousel-nav"><button class="car-btn" id="photoPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button><button class="car-btn" id="photoNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button></div></div></section>';
   document.getElementById('brandInitials').textContent=p.initials;
   document.getElementById('brandName').textContent=p.name;
   document.getElementById('brandTagline').textContent=p.tagline;
@@ -685,7 +688,7 @@ fetch('data.json').then(r=>r.json()).then(D=>{
     icon.innerHTML='<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';
   }
 
-  renderHero(D.profile, D.projects);
+  renderHero(D.profile, D.projects, D.contact.socials);
   // renderHiring(D.hiring);
   // renderLab(D.lab, D.profile);
   renderExpertise(D.expertise);
