@@ -233,7 +233,7 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
 <body data-theme="light">
 <header class="header"><div class="wrap header-inner">
 <a class="brand" href="#top" id="brandLink"><div class="logo" id="brandInitials"></div><div class="brand-text"><div class="name" id="brandName"></div><div class="tagline" id="brandTagline"></div></div></a>
-<nav><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+<nav><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
 <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button></nav>
 </div></header>
 
@@ -248,7 +248,8 @@ a.compact-card:hover .ext-arrow{opacity:1;transform:translateX(0)}
 <!-- <section class="section" id="projects"><div class="section-header"><h2>Projects</h2><p>Selected projects with demos, source code, and documentation.</p></div><div class="grid g3" id="projectsGrid"></div></section> -->
 <section class="section" id="publications"><div class="section-header"><h2>Publications</h2><p>Selected publications with BibTeX, PDF download, and sharing.</p></div><div id="pubContent"></div></section>
 <section class="section" id="teaching"><div class="section-header"><h2>Teaching</h2><p>Courses I teach at the University of Utah.</p></div><div id="teachingGrid"></div></section>
-<section class="section" id="experience"><div class="section-header"><h2>Experience &amp; Education</h2></div><div id="expTabsContainer"></div></section>
+<section class="section" id="experience"><div class="section-header"><h2>Experience</h2></div><div id="experienceContent"></div></section>
+<section class="section" id="education"><div class="section-header"><h2>Education</h2></div><div id="educationContent"></div></section>
 <section class="section" id="awards"><div class="section-header"><h2>Awards &amp; Certifications</h2></div><div class="grid g3" id="awardsGrid"></div></section>
 <section class="section" id="contact"><div class="section-header"><h2>Contact</h2></div><div id="contactContent"></div></section>
 <footer class="footer" id="footerContent"></footer>
@@ -510,11 +511,14 @@ function renderTeaching(courses){
   ).join('')+'</div>';
 }
 
-function renderExperience(exp,edu){
-  const expHTML=exp.map(e=>'<div class="timeline-item"><div class="tl-logo">'+(ICONS[e.icon]||ICONS.monitor)+'</div><div class="tl-content"><h4>'+esc(e.title)+'</h4><div class="tl-org">'+esc(e.organization)+'</div><div class="tl-desc">'+esc(e.description)+'</div></div><div class="tl-year">'+esc(e.years)+'</div></div>').join('');
-  const eduHTML=edu.map(e=>'<div class="timeline-item"><div class="tl-logo">'+(e.logo?'<img src="'+e.logo+'" alt="'+esc(e.organization)+'">':ICONS.cap)+'</div><div class="tl-content"><h4>'+esc(e.title)+'</h4><div class="tl-org">'+esc(e.organization)+'</div><div class="tl-desc">'+esc(e.description)+'</div></div><div class="tl-year">'+esc(e.years)+'</div></div>').join('');
-  document.getElementById('expTabsContainer').innerHTML=
-    '<div class="tabs-container reveal"><div class="tabs-header"><button class="tab-btn active" data-tab="exp">Experience</button><button class="tab-btn" data-tab="edu">Education</button></div><div class="tab-panel active" id="tab-exp">'+expHTML+'</div><div class="tab-panel" id="tab-edu">'+eduHTML+'</div></div>';
+function renderExperience(exp){
+  const expHTML=exp.map(e=>'<div class="timeline-item reveal"><div class="tl-logo">'+(ICONS[e.icon]||ICONS.monitor)+'</div><div class="tl-content"><h4>'+esc(e.title)+'</h4><div class="tl-org">'+esc(e.organization)+'</div><div class="tl-desc">'+esc(e.description)+'</div></div><div class="tl-year">'+esc(e.years)+'</div></div>').join('');
+  document.getElementById('experienceContent').innerHTML=expHTML;
+}
+
+function renderEducation(edu){
+  const eduHTML=edu.map(e=>'<div class="timeline-item reveal"><div class="tl-logo">'+(e.logo?'<img src="'+e.logo+'" alt="'+esc(e.organization)+'">':ICONS.cap)+'</div><div class="tl-content"><h4>'+esc(e.title)+'</h4><div class="tl-org">'+esc(e.organization)+'</div><div class="tl-desc">'+esc(e.description)+'</div></div><div class="tl-year">'+esc(e.years)+'</div></div>').join('');
+  document.getElementById('educationContent').innerHTML=eduHTML;
 }
 
 function renderAwards(awards){
@@ -690,7 +694,8 @@ fetch('data.json').then(r=>r.json()).then(D=>{
   if(D.projects && D.projects.length > 0) renderProjects(D.projects);
   renderPublications(D.publications,pubStyle);
   renderTeaching(D.teaching);
-  renderExperience(D.experience,D.education);
+  renderExperience(D.experience);
+  renderEducation(D.education);
   renderAwards(D.awards);
   renderContact(D.contact,D.profile.name);
   renderFooter(D.footer);
