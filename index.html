@@ -1,7 +1,6 @@
 <!doctype html>
 <!--
   Copyright © Ripon Chandra Malo
-  Version: V2.0.0
 
   License / Usage:
   - You may modify and adapt this website code.
@@ -15,7 +14,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Dr. Dima Abu Baker — Dental Education & Prosthodontics</title>
 <meta name="author" content="Ripon Chandra Malo">
-<meta name="version" content="V2.0.0">
 <meta name="copyright" content="© Ripon Chandra Malo. Modify allowed; commercial sale not permitted. Please give credit.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -538,7 +536,7 @@ function renderContact(c,name){
 
 function renderFooter(f){
   document.getElementById('footerContent').innerHTML=
-    '&copy; '+new Date().getFullYear()+' '+esc(f.copyright)+' — Academic Portfolio<div style="margin-top:0.6rem;font-size:0.75rem;opacity:0.7;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap"><span>Designed by <a href="https://github.com/riponcm" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none"><strong>'+esc(f.designedBy)+'</strong></a></span><span>'+esc(f.version)+'</span><span><a href="'+f.repoUrl+'" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">Acadpro '+esc(f.version)+'</a></span></div>';
+    '&copy; '+new Date().getFullYear()+' '+esc(f.copyright);
 }
 
 // ============================================================
