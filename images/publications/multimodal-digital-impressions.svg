@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d2f38"/><stop offset="100%" stop-color="#58c0cf"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect x="80" y="86" width="710" height="626" rx="34" fill="#f5fcfd"/><rect x="80" y="86" width="710" height="14" rx="7" fill="#2cbcc8"/>
+  <text x="132" y="152" fill="#2b7f87" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="2.2">EUROPEAN JOURNAL OF PROSTHODONTICS &amp; RESTORATIVE DENTISTRY</text>
+  <text x="132" y="220" fill="#143039" font-family="Georgia, serif" font-size="52" font-weight="700"><tspan x="132" dy="0">Multi-Modal Digital</tspan><tspan x="132" dy="66">Impressions for</tspan><tspan x="132" dy="66">Palatal Defects</tspan></text>
+  <text x="132" y="470" fill="#4b6970" font-family="Arial, Helvetica, sans-serif" font-size="28">In-vitro study of capture limits, trueness, and precision at reduced mouth openings</text>
+  <text x="132" y="612" fill="#143039" font-family="Arial, Helvetica, sans-serif" font-size="24">2024</text>
+  <g transform="translate(842 148)">
+    <rect x="40" y="40" width="280" height="340" rx="24" fill="#e7f8fa"/>
+    <path d="M92 132 C108 92 145 67 194 67 C245 67 286 95 298 143 C262 128 227 127 194 136 C158 145 129 167 108 196 C91 179 82 156 92 132 Z" fill="#2cbcc8"/>
+    <path d="M114 200 C136 173 162 154 197 150 C235 145 267 157 294 180 C273 209 249 229 217 243 C184 257 150 258 116 246 C110 231 108 217 114 200 Z" fill="#91dbe2"/>
+    <path d="M125 204 C156 215 186 216 215 209 C244 201 268 186 286 167" fill="none" stroke="#145969" stroke-width="10" stroke-linecap="round"/>
+    <path d="M88 310 L316 310" stroke="#2cbcc8" stroke-width="8" stroke-dasharray="1 16" stroke-linecap="round"/>
+  </g>
+</svg>

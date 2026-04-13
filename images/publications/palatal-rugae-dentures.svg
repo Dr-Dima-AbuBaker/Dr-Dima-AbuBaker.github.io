@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#44281d"/><stop offset="100%" stop-color="#d89b66"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect x="80" y="86" width="710" height="626" rx="34" fill="#fff9f3"/><rect x="80" y="86" width="710" height="14" rx="7" fill="#c9823f"/>
+  <text x="132" y="152" fill="#a1632a" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">THE JOURNAL OF PROSTHETIC DENTISTRY</text>
+  <text x="132" y="220" fill="#3b261d" font-family="Georgia, serif" font-size="48" font-weight="700"><tspan x="132" dy="0">Impact of Adding</tspan><tspan x="132" dy="60">Palatal Rugae to</tspan><tspan x="132" dy="60">Complete Dentures</tspan></text>
+  <text x="132" y="450" fill="#73574a" font-family="Arial, Helvetica, sans-serif" font-size="28">Randomized crossover clinical trial of patient satisfaction and oral health-related quality of life</text>
+  <text x="132" y="612" fill="#3b261d" font-family="Arial, Helvetica, sans-serif" font-size="24">2021</text>
+  <g transform="translate(846 154)">
+    <ellipse cx="168" cy="150" rx="150" ry="120" fill="#fff2e6"/>
+    <path d="M83 180 C96 114 149 72 221 72 C274 72 320 98 344 139 C309 131 272 133 238 147 C205 161 180 183 160 204 C135 231 111 248 89 248 C78 226 76 202 83 180 Z" fill="#d89b66"/>
+    <path d="M125 150 C153 134 184 126 216 126 C248 126 278 136 309 154" fill="none" stroke="#a1632a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M114 176 C146 161 181 153 218 153 C252 153 284 160 314 176" fill="none" stroke="#a1632a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M120 204 C151 191 184 184 220 184 C250 184 279 190 305 202" fill="none" stroke="#a1632a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#123227"/><stop offset="100%" stop-color="#72b89a"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect x="26" y="28" width="222" height="244" rx="18" fill="#f6fcf8"/><rect x="26" y="28" width="222" height="10" rx="5" fill="#4cb17f"/>
+  <text x="44" y="58" fill="#378863" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="1.5">EJ DENTAL EDUCATION</text>
+  <text x="44" y="94" fill="#163126" font-family="Georgia, serif" font-size="22" font-weight="700"><tspan x="44" dy="0">Students in</tspan><tspan x="44" dy="26">Prostho Lab</tspan><tspan x="44" dy="26">Teaching Trial</tspan></text>
+  <text x="44" y="236" fill="#163126" font-family="Arial, Helvetica, sans-serif" font-size="12">2025 • written / video / live</text>
+  <g transform="translate(270 74)"><rect x="0" y="0" width="104" height="76" rx="10" fill="#e8f7ef"/><rect x="10" y="10" width="84" height="50" rx="8" fill="#bfe6d0"/><polygon points="45,24 45,43 62,33" fill="#247650"/><rect x="24" y="66" width="56" height="8" rx="4" fill="#247650"/><rect x="2" y="96" width="28" height="44" rx="8" fill="#f4fbf7"/><rect x="38" y="96" width="28" height="44" rx="8" fill="#f4fbf7"/><rect x="74" y="96" width="28" height="44" rx="8" fill="#f4fbf7"/></g>
+</svg>

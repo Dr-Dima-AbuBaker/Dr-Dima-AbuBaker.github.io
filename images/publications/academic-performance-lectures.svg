@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#26321b"/><stop offset="100%" stop-color="#b0c56d"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect x="80" y="86" width="710" height="626" rx="34" fill="#fbfcf5"/><rect x="80" y="86" width="710" height="14" rx="7" fill="#93af3d"/>
+  <text x="132" y="152" fill="#6f8426" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">EUROPEAN JOURNAL OF DENTAL EDUCATION</text>
+  <text x="132" y="220" fill="#27301b" font-family="Georgia, serif" font-size="50" font-weight="700"><tspan x="132" dy="0">Academic Performance</tspan><tspan x="132" dy="62">of Dental Students</tspan><tspan x="132" dy="62">Across Lecture Modes</tspan></text>
+  <text x="132" y="470" fill="#65714d" font-family="Arial, Helvetica, sans-serif" font-size="28">Randomised trial comparing live, audio-recorded, and video-recorded lectures</text>
+  <text x="132" y="612" fill="#27301b" font-family="Arial, Helvetica, sans-serif" font-size="24">2021</text>
+  <g transform="translate(844 162)">
+    <rect x="0" y="0" width="320" height="192" rx="24" fill="#eef3d6"/>
+    <rect x="40" y="30" width="240" height="116" rx="16" fill="#dce7ae"/>
+    <rect x="52" y="168" width="216" height="18" rx="9" fill="#4b6326"/>
+    <rect x="146" y="192" width="28" height="72" rx="14" fill="#4b6326"/>
+    <g transform="translate(18 288)">
+      <circle cx="48" cy="48" r="42" fill="#eef3d6"/><circle cx="48" cy="48" r="10" fill="#4b6326"/><path d="M48 18 L48 6" stroke="#4b6326" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="152" cy="48" r="42" fill="#eef3d6"/><path d="M136 34 L168 48 L136 62 Z" fill="#4b6326"/>
+      <circle cx="256" cy="48" r="42" fill="#eef3d6"/><path d="M238 48 L274 48" stroke="#4b6326" stroke-width="8" stroke-linecap="round"/><path d="M256 30 L256 66" stroke="#4b6326" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

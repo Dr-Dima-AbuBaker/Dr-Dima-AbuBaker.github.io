@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#12324e"/><stop offset="100%" stop-color="#5194d1"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect x="80" y="86" width="710" height="626" rx="34" fill="#f7fbff"/><rect x="80" y="86" width="710" height="14" rx="7" fill="#3e7dd5"/>
+  <text x="132" y="152" fill="#4572a3" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">JORDAN MEDICAL JOURNAL</text>
+  <text x="132" y="220" fill="#15314a" font-family="Georgia, serif" font-size="52" font-weight="700"><tspan x="132" dy="0">Facebook and</tspan><tspan x="132" dy="66">Dental Education:</tspan><tspan x="132" dy="66">What Do Students Like?</tspan></text>
+  <text x="132" y="470" fill="#50687f" font-family="Arial, Helvetica, sans-serif" font-size="28">Student attitudes toward social media as an educational source</text>
+  <text x="132" y="612" fill="#15314a" font-family="Arial, Helvetica, sans-serif" font-size="24">2019</text>
+  <g transform="translate(852 160)">
+    <rect x="0" y="0" width="316" height="440" rx="36" fill="#eaf4ff"/>
+    <rect x="26" y="32" width="264" height="376" rx="24" fill="#f7fbff"/>
+    <circle cx="80" cy="84" r="24" fill="#86b4ea"/>
+    <rect x="118" y="68" width="102" height="12" rx="6" fill="#3e7dd5"/>
+    <rect x="118" y="90" width="72" height="10" rx="5" fill="#9bbfe8"/>
+    <rect x="56" y="142" width="204" height="108" rx="16" fill="#d6e8fb"/>
+    <path d="M165 177 L165 233" stroke="#3e7dd5" stroke-width="20" stroke-linecap="round"/>
+    <path d="M190 177 L145 177" stroke="#3e7dd5" stroke-width="20" stroke-linecap="round"/>
+    <rect x="56" y="278" width="204" height="20" rx="10" fill="#9bbfe8"/>
+    <rect x="56" y="314" width="178" height="20" rx="10" fill="#9bbfe8"/>
+    <rect x="56" y="350" width="156" height="20" rx="10" fill="#9bbfe8"/>
+  </g>
+</svg>

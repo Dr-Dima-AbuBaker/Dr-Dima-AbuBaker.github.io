@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#14213d"/><stop offset="100%" stop-color="#6b8fb8"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <rect x="26" y="28" width="222" height="244" rx="18" fill="#f8fbff"/>
+  <rect x="26" y="28" width="222" height="10" rx="5" fill="#5a8ed1"/>
+  <text x="44" y="58" fill="#4b6f9d" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.6">J DENTAL EDUCATION</text>
+  <text x="44" y="96" fill="#17263a" font-family="Georgia, serif" font-size="24" font-weight="700"><tspan x="44" dy="0">Depression,</tspan><tspan x="44" dy="28">Anxiety,</tspan><tspan x="44" dy="28">&amp; Stress</tspan><tspan x="44" dy="28">During Viva</tspan></text>
+  <text x="44" y="238" fill="#223752" font-family="Arial, Helvetica, sans-serif" font-size="12">2025 • DASS-21 study</text>
+  <g transform="translate(270 70)"><circle cx="70" cy="70" r="58" fill="#f2f7ff"/><path d="M31 85 C31 53 55 29 86 29 C111 29 132 50 132 76" fill="none" stroke="#355f93" stroke-width="8" stroke-linecap="round"/><circle cx="68" cy="72" r="5" fill="#1f3652"/><circle cx="92" cy="72" r="5" fill="#1f3652"/><path d="M62 103 C72 111 87 112 98 102" fill="none" stroke="#1f3652" stroke-width="5" stroke-linecap="round"/></g>
+</svg>

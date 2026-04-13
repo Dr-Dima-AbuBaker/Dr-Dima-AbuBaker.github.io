@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14213d"/><stop offset="100%" stop-color="#6b8fb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="1040" cy="140" r="120" fill="#fff" fill-opacity=".12"/>
+  <circle cx="140" cy="690" r="170" fill="#fff" fill-opacity=".08"/>
+  <rect x="78" y="84" width="708" height="628" rx="34" fill="#f8fbff"/>
+  <rect x="78" y="84" width="708" height="14" rx="7" fill="#5a8ed1"/>
+  <text x="132" y="152" fill="#4b6f9d" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">JOURNAL OF DENTAL EDUCATION</text>
+  <text x="132" y="220" fill="#17263a" font-family="Georgia, serif" font-size="54" font-weight="700">
+    <tspan x="132" dy="0">Depression, Anxiety,</tspan>
+    <tspan x="132" dy="66">and Stress During Viva</tspan>
+    <tspan x="132" dy="66">and Case Presentation</tspan>
+    <tspan x="132" dy="66">Oral Examinations</tspan>
+  </text>
+  <text x="132" y="532" fill="#4f647f" font-family="Arial, Helvetica, sans-serif" font-size="28">DASS-21 scale study of undergraduate dental students</text>
+  <text x="132" y="616" fill="#223752" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="1.2">2025</text>
+  <g transform="translate(840 150)">
+    <circle cx="170" cy="160" r="138" fill="#f2f7ff" fill-opacity=".95"/>
+    <path d="M72 193 C72 131 118 84 177 84 C236 84 282 132 282 192 C282 252 243 303 177 303 C111 303 72 255 72 193 Z" fill="#b5c9e8"/>
+    <path d="M130 136 C145 120 168 112 189 112 C229 112 262 142 262 183 C262 205 251 226 234 240" fill="none" stroke="#355f93" stroke-width="18" stroke-linecap="round"/>
+    <path d="M121 247 C98 227 87 200 87 170 C87 108 133 63 193 63" fill="none" stroke="#6d92c3" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="163" cy="170" r="10" fill="#1f3652"/><circle cx="214" cy="170" r="10" fill="#1f3652"/>
+    <path d="M153 223 C171 235 196 236 219 221" fill="none" stroke="#1f3652" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

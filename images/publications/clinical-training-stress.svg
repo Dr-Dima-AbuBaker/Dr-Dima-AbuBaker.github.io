@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3c2036"/><stop offset="100%" stop-color="#b66ca0"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/><rect x="80" y="86" width="710" height="626" rx="34" fill="#fff8fd"/><rect x="80" y="86" width="710" height="14" rx="7" fill="#cb6aad"/>
+  <text x="132" y="152" fill="#a14d88" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">JOURNAL OF OCCUPATIONAL HEALTH</text>
+  <text x="132" y="220" fill="#341c31" font-family="Georgia, serif" font-size="50" font-weight="700"><tspan x="132" dy="0">Stress Experienced by</tspan><tspan x="132" dy="62">Dental Students During</tspan><tspan x="132" dy="62">Clinical Training</tspan></text>
+  <text x="132" y="450" fill="#6d5068" font-family="Arial, Helvetica, sans-serif" font-size="28">Cross-sectional study across different dental disciplines</text>
+  <text x="132" y="612" fill="#341c31" font-family="Arial, Helvetica, sans-serif" font-size="24">2024</text>
+  <g transform="translate(848 152)">
+    <circle cx="166" cy="166" r="142" fill="#fdf0f8"/>
+    <path d="M164 86 L182 136 L236 136 L192 168 L208 220 L164 187 L120 220 L136 168 L92 136 L146 136 Z" fill="#cb6aad"/>
+    <path d="M73 252 C117 213 214 213 258 252" fill="none" stroke="#7a3e67" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="118" cy="262" r="16" fill="#7a3e67"/><circle cx="210" cy="262" r="16" fill="#7a3e67"/>
+  </g>
+</svg>

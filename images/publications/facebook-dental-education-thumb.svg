@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#12324e"/><stop offset="100%" stop-color="#5194d1"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect x="26" y="28" width="222" height="244" rx="18" fill="#f7fbff"/><rect x="26" y="28" width="222" height="10" rx="5" fill="#3e7dd5"/>
+  <text x="44" y="58" fill="#4572a3" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="1.4">JORDAN MEDICAL JOURNAL</text>
+  <text x="44" y="96" fill="#15314a" font-family="Georgia, serif" font-size="22" font-weight="700"><tspan x="44" dy="0">Facebook</tspan><tspan x="44" dy="26">&amp; Dental</tspan><tspan x="44" dy="26">Education</tspan></text>
+  <text x="44" y="236" fill="#15314a" font-family="Arial, Helvetica, sans-serif" font-size="12">2019 • student attitudes</text>
+  <g transform="translate(276 64)"><rect x="0" y="0" width="96" height="136" rx="14" fill="#eaf4ff"/><rect x="8" y="10" width="80" height="116" rx="10" fill="#f7fbff"/><circle cx="28" cy="28" r="8" fill="#86b4ea"/><rect x="42" y="22" width="28" height="6" rx="3" fill="#3e7dd5"/><rect x="18" y="46" width="58" height="32" rx="8" fill="#d6e8fb"/><path d="M48 53 L48 70" stroke="#3e7dd5" stroke-width="6" stroke-linecap="round"/><path d="M58 53 L43 53" stroke="#3e7dd5" stroke-width="6" stroke-linecap="round"/></g>
+</svg>

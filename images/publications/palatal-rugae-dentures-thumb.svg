@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#44281d"/><stop offset="100%" stop-color="#d89b66"/></linearGradient></defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect x="26" y="28" width="222" height="244" rx="18" fill="#fff9f3"/><rect x="26" y="28" width="222" height="10" rx="5" fill="#c9823f"/>
+  <text x="44" y="58" fill="#a1632a" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="1.4">J PROSTHETIC DENTISTRY</text>
+  <text x="44" y="96" fill="#3b261d" font-family="Georgia, serif" font-size="22" font-weight="700"><tspan x="44" dy="0">Palatal</tspan><tspan x="44" dy="26">Rugae in</tspan><tspan x="44" dy="26">Complete</tspan><tspan x="44" dy="26">Dentures</tspan></text>
+  <text x="44" y="236" fill="#3b261d" font-family="Arial, Helvetica, sans-serif" font-size="12">2021 • crossover trial</text>
+  <g transform="translate(270 80)"><ellipse cx="66" cy="60" rx="62" ry="50" fill="#fff2e6"/><path d="M29 74 C37 44 61 24 92 24 C120 24 141 36 156 58 C140 54 124 56 108 63 C94 70 82 80 71 91 C56 104 39 110 30 108 C25 96 25 84 29 74 Z" fill="#d89b66"/><path d="M48 57 C63 50 79 46 97 46 C111 46 126 50 140 59" fill="none" stroke="#a1632a" stroke-width="4" stroke-linecap="round"/><path d="M44 73 C60 66 78 62 97 62 C114 62 129 65 143 73" fill="none" stroke="#a1632a" stroke-width="4" stroke-linecap="round"/></g>
+</svg>

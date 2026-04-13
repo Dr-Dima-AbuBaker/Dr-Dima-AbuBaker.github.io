@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b1f2b"/><stop offset="100%" stop-color="#c98d85"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="80" y="86" width="710" height="626" rx="34" fill="#fff7f5"/>
+  <rect x="80" y="86" width="710" height="14" rx="7" fill="#d47b63"/>
+  <text x="132" y="152" fill="#a85e48" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">JOURNAL OF PROSTHODONTICS</text>
+  <text x="132" y="220" fill="#37212a" font-family="Georgia, serif" font-size="53" font-weight="700"><tspan x="132" dy="0">Acrylic Resin versus</tspan><tspan x="132" dy="66">Metal Palatal Base</tspan><tspan x="132" dy="66">in Complete Dentures</tspan></text>
+  <text x="132" y="474" fill="#77514b" font-family="Arial, Helvetica, sans-serif" font-size="28">Randomized crossover clinical trial of patient-reported outcomes</text>
+  <text x="132" y="612" fill="#37212a" font-family="Arial, Helvetica, sans-serif" font-size="24">2025</text>
+  <g transform="translate(850 170)">
+    <ellipse cx="160" cy="150" rx="150" ry="118" fill="#fff1ed"/>
+    <path d="M76 184 C96 106 160 61 242 72 C287 78 325 100 347 135 C317 126 287 126 261 138 C231 152 210 177 193 198 C171 226 142 249 91 247 C80 228 72 207 76 184 Z" fill="#d47b63"/>
+    <path d="M120 198 C135 145 174 114 232 119 C262 121 291 131 318 152 C291 155 265 166 244 185 C221 206 203 236 168 251 C145 245 127 226 120 198 Z" fill="#9ca7b8"/>
+    <path d="M120 198 C146 213 181 218 211 208 C241 198 266 172 287 153" fill="none" stroke="#4c5867" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
