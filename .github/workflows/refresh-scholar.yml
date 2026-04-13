@@ -30,7 +30,33 @@ jobs:
         timeout-minutes: 10
         env:
           PYTHONUNBUFFERED: "1"
-        run: timeout 8m python -u fetch_scholar.py
+        run: |
+          set -euo pipefail
+          log_file="$(mktemp)"
+          timeout 8m python -u fetch_scholar.py >"$log_file" 2>&1 &
+          pid=$!
+
+          cleanup() {
+            if kill -0 "$pid" 2>/dev/null; then
+              kill "$pid" 2>/dev/null || true
+            fi
+          }
+          trap cleanup EXIT
+
+          while kill -0 "$pid" 2>/dev/null; do
+            echo "Scholar refresh still running at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            sleep 30
+          done
+
+          wait "$pid" || status=$?
+          cat "$log_file"
+
+          if [ "${status:-0}" -eq 124 ]; then
+            echo "Scholar refresh timed out after 8 minutes."
+            exit 124
+          fi
+
+          exit "${status:-0}"
 
       - name: Commit and push changes
         run: |
