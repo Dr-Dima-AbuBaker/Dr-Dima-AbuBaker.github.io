@@ -145,6 +145,21 @@
   ],
   "publications": [
     {
+      "title": "Accuracy Assessment of Digitally and Conventionally Manufactured Obturator Frameworks for Palatal Defects: An In-Vitro Study",
+      "authors": "Dima Abu Baker and Edward Ghrayeb and Jose Rodriguez and Dima Affaneh",
+      "highlightAuthor": "Dima Abu Baker",
+      "venue": "Digital Dentistry Journal",
+      "year": 2026,
+      "type": "journal",
+      "image": "images/publications/placeholder.svg",
+      "thumbnail": "images/publications/placeholder-thumb.svg",
+      "description": "Purposecompare the trueness and precision of obturator frameworks fabricated using conventional, digital-analogue, and digital workflows based on a standardized maxillary model with a palatal defect.M...",
+      "pdfUrl": "https://www.sciencedirect.com/science/article/pii/S2950643326000176",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2950643326000176",
+      "citations": 0,
+      "bibtex": "@article{dima2026,title={Accuracy Assessment of Digitally and Conventionally Manufactured Obturator Frameworks for Palatal Defects: An In-Vitro Study},author={Dima Abu Baker and Edward Ghrayeb and Jose Rodriguez and Dima Affaneh},year={2026}}"
+    },
+    {
       "title": "Depression, Anxiety, and Stress in Undergraduate Dental Students During Viva and Case Presentation Oral Examinations Using the DASS‐21 Scale",
       "authors": "Samiha Yousef Sartawi and Dima Abu Baker and Sanaa Abdallah Aljamani and Rahaf Nassar",
       "highlightAuthor": "Dima Abu Baker",
@@ -201,7 +216,7 @@
       "description": " Objectives: To assess the stress level, the impact of stress factors, and discrepancies between fourth- and fifth-year undergraduate clinical students at the University of Jordan. Methods: A cross-se...",
       "pdfUrl": "https://academic.oup.com/joh/article-abstract/66/1/uiae006/7606911",
       "url": "https://academic.oup.com/joh/article-abstract/66/1/uiae006/7606911",
-      "citations": 25,
+      "citations": 28,
       "bibtex": "@article{rasha2024,title={Stress experienced by dental students performing clinical training in different dental disciplines: a cross-sectional study},author={Rasha A Alamoush and Sereen Al-Sawaeir and Dima Abu Baker and Sanaa A Aljamani and Salah A Alomoush and Mahmoud K Al-Omiri},year={2024}}"
     },
     {
