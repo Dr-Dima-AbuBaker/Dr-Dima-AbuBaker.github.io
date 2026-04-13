@@ -2,9 +2,9 @@
   "profile": {
     "name": "Dr. Dima Abu Baker",
     "initials": "DA",
-    "tagline": "Dental Education · Prosthodontics",
-    "headline": "Advancing dental education through innovative teaching methods",
-    "bio": "I'm <strong>Dr. Dima Abu Baker</strong> — I conduct research in Dental Education, Prosthodontics, and Digital Dentistry. My work focuses on improving teaching methodologies and patient outcomes in dentistry.",
+    "tagline": "Prosthodontics · Digital Dentistry",
+    "headline": "Assistant Professor of Prosthodontics with academic and clinical expertise",
+    "bio": "I'm <strong>Dr. Dima Abu Baker</strong> — a prosthodontist with 7+ years of academic and clinical experience. My work spans teaching, research, and specialist clinical care, with a focus on prosthodontic treatment, digital dentistry, implant dentistry, minimally invasive care, biomimetic dentistry, and adhesive dentistry.",
     "role": "Assistant Professor",
     "affiliation": "University of the Pacific",
     "resumeUrl": "images/CV-Dima-Abu-Baker.pdf",
@@ -90,51 +90,7 @@
   },
   "expertise": [
     {
-      "name": "Prosthodontics",
-      "level": "expert"
-    },
-    {
-      "name": "Dental Education",
-      "level": "expert"
-    },
-    {
-      "name": "Complete Dentures",
-      "level": "expert"
-    },
-    {
-      "name": "Teaching Methodologies",
-      "level": "expert"
-    },
-    {
-      "name": "Digital Impressions",
-      "level": "advanced"
-    },
-    {
-      "name": "Clinical Research",
-      "level": "advanced"
-    },
-    {
-      "name": "Student Assessment",
-      "level": "advanced"
-    },
-    {
-      "name": "Patient Care",
-      "level": "expert"
-    },
-    {
-      "name": "Randomized Clinical Trials",
-      "level": "advanced"
-    },
-    {
-      "name": "Statistical Analysis",
-      "level": "advanced"
-    },
-    {
-      "name": "Quality of Life Research",
-      "level": "advanced"
-    },
-    {
-      "name": "Laboratory Instruction",
+      "name": "Prosthodontic Treatment",
       "level": "expert"
     },
     {
@@ -142,20 +98,20 @@
       "level": "expert"
     },
     {
-      "name": "Digital Technologies in Removable Prosthodontics",
+      "name": "Implant Dentistry",
       "level": "expert"
     },
     {
-      "name": "Maxillo-Facial Prosthodontics",
+      "name": "Minimally Invasive Dentistry",
       "level": "expert"
     },
     {
-      "name": "Dental Materials",
+      "name": "Biomimetic Dentistry",
       "level": "expert"
     },
     {
-      "name": "Erosive Tooth Wear Management",
-      "level": "advanced"
+      "name": "Adhesive Dentistry",
+      "level": "expert"
     }
   ],
   "_projects_disabled": [
