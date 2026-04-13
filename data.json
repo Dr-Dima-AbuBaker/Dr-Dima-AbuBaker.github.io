@@ -301,38 +301,38 @@
   ],
   "experience": [
     {
-      "title": "Assistant Professor",
-      "organization": "Arthur A. Dugoni School of Dentistry, University of the Pacific",
-      "description": "Teaching dental students in prosthodontics and dental education. Developing innovative teaching methodologies and conducting research in digital dentistry and prosthodontics education.",
-      "years": "2026 — Present",
-      "icon": "monitor"
-    },
-    {
       "title": "Assistant Professor in Prosthodontics",
       "organization": "School of Dentistry, The University of Jordan",
-      "description": "Created brand new course offerings for undergraduate and graduate students. Developed in-depth lectures and course materials based on research and learning objectives. Collaborated with colleagues to improve department function and student engagement.",
-      "years": "Nov 2022 — 2026",
+      "description": "Created brand new course offerings for undergraduate and graduate students, designed course materials from learning objectives, developed in-depth lectures, expanded publication activity, collaborated with fellow professors to improve department function and student engagement, and participated in university, community, and professional service activities.",
+      "years": "Oct 2022 — Aug 2025",
       "icon": "monitor"
     },
     {
       "title": "Consultant in Prosthodontics",
       "organization": "The University of Jordan Hospital",
-      "description": "Provided comprehensive prosthodontic care including implant-supported prostheses, crowns, bridges, and removable dentures. Developed treatment plans for facial pain and TMDs. Supported functional and aesthetic enhancements for patients with traumatic injuries or birth defects.",
-      "years": "Apr 2022 — Present",
+      "description": "Focused on aesthetic minimally invasive dental treatments including injection moulding, composites, partial coverage restorations, and ceramic veneers. Replaced missing teeth with implant-supported prostheses, crowns, bridges, and removable prostheses, developed treatment plans for facial pain and TMDs, and supported functional and aesthetic enhancement for patients with traumatic injuries, diseases, or birth defects.",
+      "years": "Mar 2022 — Aug 2025",
       "icon": "globe"
+    },
+    {
+      "title": "Prosthodontics Resident",
+      "organization": "King's College London",
+      "description": "Mastered advanced techniques in dental prosthetics and restoration, completed over 100 complex cases with high patient satisfaction, collaborated with multidisciplinary teams, and used advanced technology for precise diagnostics and design.",
+      "years": "Sep 2019 — Nov 2022",
+      "icon": "cap"
     },
     {
       "title": "Teaching and Research Assistant",
       "organization": "Department of Prosthodontics, The University of Jordan",
-      "description": "Taught undergraduate level courses and supervised laboratory work. Evaluated and graded examinations, provided feedback to students, and helped develop improvement strategies.",
-      "years": "Oct 2018 — Sep 2019",
+      "description": "Evaluated and graded examinations and assignments, offered feedback to students, taught safe laboratory equipment use and required experiments, and taught undergraduate-level courses.",
+      "years": "Sep 2018 — Aug 2019",
       "icon": "pencil"
     },
     {
       "title": "Chief General Dentist",
       "organization": "Orange Dental Clinics",
-      "description": "Examined oral structures to diagnose problems and develop treatment plans. Provided cosmetic dentistry services and patient education. Collaborated with restorative dentists and orthodontists on comprehensive treatment plans.",
-      "years": "Aug 2017 — Oct 2018",
+      "description": "Examined oral and maxillofacial structures to diagnose problems and develop treatment plans, improved patients' appearance and self-confidence, educated patients on treatment options and oral health, and collaborated with restorative dentists and orthodontists on comprehensive treatment plans.",
+      "years": "Jul 2017 — Sep 2018",
       "icon": "monitor"
     }
   ],
@@ -340,46 +340,39 @@
     {
       "title": "Master's in Clinical Dentistry in Prosthodontics",
       "organization": "King's College London",
-      "description": "Specialized postgraduate training in prosthodontics, advanced dental materials, and evidence-based clinical practice.",
+      "description": "London, United Kingdom",
       "years": "2019 — 2022",
       "logo": "images/education/kings-college-london.svg"
     },
     {
-      "title": "Doctor of Dental Surgery",
+      "title": "Doctor of Dental Surgery in Dental Surgery",
       "organization": "The University of Jordan",
-      "description": "Comprehensive dental education covering all aspects of general dentistry, clinical practice, and patient care.",
+      "description": "Amman, Jordan",
       "years": "2011 — 2016",
       "logo": "images/education/university-of-jordan.png"
     }
   ],
   "awards": [
     {
-      "title": "Best Research Paper",
-      "subtitle": "European Journal of Dental Education, 2025",
+      "title": "Honor Rolls",
+      "subtitle": "King's College London, 2022 Fall Graduation",
       "url": "#",
       "icon": "award",
       "iconColor": "warm"
     },
     {
-      "title": "Excellence in Teaching Award",
-      "subtitle": "University of Jordan, 2023",
+      "title": "Membership in Prosthodontics",
+      "subtitle": "Royal College of Surgeons of Edinburgh, September 2022",
       "url": "#",
-      "icon": "star",
+      "icon": "shield",
       "iconColor": "warm"
     },
     {
-      "title": "Research Grant",
-      "subtitle": "Dental Education Research Foundation, 2022",
+      "title": "Jordanian Board in Prosthodontics",
+      "subtitle": "Jordanian Medical Council, April 2023",
       "url": "#",
       "icon": "cap",
       "iconColor": "warm"
-    },
-    {
-      "title": "Clinical Excellence Recognition",
-      "subtitle": "Jordan Dental Association, 2021",
-      "url": "#",
-      "icon": "shield",
-      "iconColor": "sage"
     }
   ],
   "contact": {
