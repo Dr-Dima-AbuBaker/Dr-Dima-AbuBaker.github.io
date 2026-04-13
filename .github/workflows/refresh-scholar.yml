@@ -1,0 +1,43 @@
+name: Refresh Google Scholar Data
+
+on:
+  schedule:
+    - cron: "0 15 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-scholar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install scholarly
+
+      - name: Refresh publications from Google Scholar
+        run: python fetch_scholar.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git restore data.backup.json || true
+          if git diff --quiet -- data.json; then
+            echo "No data.json changes to commit."
+            exit 0
+          fi
+          git add data.json
+          git commit -m "Refresh publications from Google Scholar"
+          git push
