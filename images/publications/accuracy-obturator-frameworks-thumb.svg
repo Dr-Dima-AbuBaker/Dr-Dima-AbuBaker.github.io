@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-labelledby="title desc">
+  <title id="title">Accuracy Assessment publication thumbnail</title>
+  <desc id="desc">Thumbnail cover for the obturator frameworks publication.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1f2a"/>
+      <stop offset="100%" stop-color="#1e6a77"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fcfc"/>
+      <stop offset="100%" stop-color="#def0f0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <circle cx="332" cy="56" r="44" fill="#8ce0d5" fill-opacity="0.2"/>
+  <circle cx="48" cy="260" r="72" fill="#ffffff" fill-opacity="0.08"/>
+
+  <rect x="28" y="30" width="222" height="240" rx="18" fill="url(#card)"/>
+  <rect x="28" y="30" width="222" height="10" rx="5" fill="#2ac1b4"/>
+  <text x="46" y="62" fill="#246f74" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.8">DIGITAL DENTISTRY JOURNAL</text>
+  <text x="46" y="95" fill="#0f2732" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="700">
+    <tspan x="46" dy="0">Accuracy</tspan>
+    <tspan x="46" dy="28">Assessment of</tspan>
+    <tspan x="46" dy="28">Obturator</tspan>
+    <tspan x="46" dy="28">Frameworks</tspan>
+  </text>
+  <text x="46" y="220" fill="#446470" font-family="Arial, Helvetica, sans-serif" font-size="12">Palatal defects workflow study</text>
+  <text x="46" y="243" fill="#163340" font-family="Arial, Helvetica, sans-serif" font-size="12">Dima Abu Baker et al. • 2026</text>
+
+  <g transform="translate(266 58)">
+    <path d="M33 15 C68 -3 114 2 144 28 C175 55 187 102 177 147 C165 197 127 228 83 236 C46 243 6 233 -18 205 C-38 180 -42 139 -29 101 C-16 64 2 36 33 15 Z" fill="#e8f7f6"/>
+    <path d="M48 39 C75 24 108 27 131 45 C154 64 165 95 159 127 C152 160 126 186 91 196 C60 205 26 198 6 178 C-12 160 -17 132 -9 104 C0 74 17 53 48 39 Z" fill="none" stroke="#26b5ab" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 12"/>
+    <path d="M61 68 C84 51 112 51 132 65 C153 81 161 108 154 135 C147 161 127 177 100 183 C75 188 47 182 31 166 C15 151 12 126 19 103 C25 85 40 75 61 68 Z" fill="#8fd7d1"/>
+    <path d="M52 103 C69 88 92 85 109 91 C128 97 140 111 140 130 C140 153 121 171 94 175 C72 178 49 171 35 157 C22 144 19 125 25 106 C30 96 39 93 52 103 Z" fill="#1a6072"/>
+    <circle cx="108" cy="124" r="14" fill="#f8fdfd"/>
+    <circle cx="108" cy="124" r="6" fill="#1a6072"/>
+  </g>
+</svg>
