@@ -27,7 +27,10 @@ jobs:
         run: pip install scholarly
 
       - name: Refresh publications from Google Scholar
-        run: python fetch_scholar.py
+        timeout-minutes: 10
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: timeout 8m python -u fetch_scholar.py
 
       - name: Commit and push changes
         run: |
