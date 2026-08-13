@@ -27,7 +27,7 @@ import argparse
 from datetime import datetime
 
 try:
-    from scholarly import scholarly
+    from scholarly import scholarly, ProxyGenerator
 except ImportError:
     print("Install scholarly first:")
     print("  pip install scholarly")
@@ -88,10 +88,38 @@ def format_bibtex(pub):
     return f"@{bib_type}{{{key},title={{{title}}},author={{{authors}}},year={{{year}}}}}"
 
 
+def setup_scholarly_proxy():
+    """Route requests through a rotating free proxy.
+
+    Google Scholar blocks/403s requests from known datacenter IP ranges
+    (e.g. GitHub Actions runners) almost every time. Without a proxy,
+    scholarly retries the *same* blocked IP with 60-120s backoff between
+    attempts, which reliably burns through the whole CI timeout without
+    ever succeeding. With a proxy configured, it switches to a different
+    IP immediately on a 403 instead of waiting.
+    """
+    scholarly.set_timeout(20)
+    scholarly.set_retries(5)
+    pg = ProxyGenerator()
+    try:
+        success = pg.FreeProxies()
+    except Exception as e:
+        print(f"  Proxy setup raised an exception: {e}")
+        success = False
+
+    if success:
+        scholarly.use_proxy(pg)
+        print("  Using a rotating free proxy to avoid IP-based blocking.")
+    else:
+        print("  No working free proxy found; continuing with a direct connection.")
+
+
 def fetch_scholar_publications(scholar_id):
     """Fetch publications from Google Scholar."""
     print(f"\nFetching publications for Scholar ID: {scholar_id}")
     print("  (This may take 30-60 seconds due to rate limiting...)\n")
+
+    setup_scholarly_proxy()
 
     try:
         author = scholarly.search_author_id(scholar_id)

@@ -24,16 +24,20 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install scholarly
+        # httpx>=0.28 and free-proxy>=1.1.0 both broke scholarly's proxy
+        # support (scholarly 1.7.11 still calls httpx.Client(proxies=...),
+        # and its free-proxy retry path omits the now-required `repeat` arg).
+        # Pinned below until scholarly fixes its own dependency constraints.
+        run: pip install scholarly "httpx<0.28" "free-proxy<1.1.0"
 
       - name: Refresh publications from Google Scholar
-        timeout-minutes: 10
+        timeout-minutes: 15
         env:
           PYTHONUNBUFFERED: "1"
         run: |
           set -euo pipefail
           log_file="$(mktemp)"
-          timeout 8m python -u fetch_scholar.py >"$log_file" 2>&1 &
+          timeout 12m python -u fetch_scholar.py >"$log_file" 2>&1 &
           pid=$!
 
           cleanup() {
@@ -52,7 +56,7 @@ jobs:
           cat "$log_file"
 
           if [ "${status:-0}" -eq 124 ]; then
-            echo "Scholar refresh timed out after 8 minutes."
+            echo "Scholar refresh timed out after 12 minutes."
             exit 124
           fi
 
