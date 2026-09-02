@@ -99,14 +99,23 @@ Then open `http://localhost:8000` in your browser.
 ### Step 4 (Optional) — Auto-Update from Google Scholar
 
 ```bash
-pip install scholarly
+pip install requests
+export SERPAPI_KEY=your_key
 python fetch_scholar.py --scholar-id YOUR_SCHOLAR_ID
 ```
 
 Your Google Scholar ID is the value after `user=` in your profile URL:
 `https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID`
 
+Publication data comes from Google Scholar through [SerpApi](https://serpapi.com), which needs a free API key (250 searches/month — the weekly refresh uses about one). Google blocks direct scraping from datacenter IPs, so querying Scholar itself works from a home connection but fails from CI.
+
+Add `--dry-run` to preview the changes without writing anything.
+
 This updates citation counts for existing papers and adds new ones with placeholder images. Your manual edits (images, PDFs, descriptions) are never overwritten. A backup is saved as `data.backup.json` before each update.
+
+**Weekly refresh on GitHub Actions:** `.github/workflows/refresh-scholar.yml` runs this every Monday and commits any changes. It needs the same key stored as a repository secret named `SERPAPI_KEY` (Settings → Secrets and variables → Actions).
+
+Run `python test_fetch_scholar.py` to exercise the parsing and merge logic; it uses recorded fixtures and spends no API calls.
 
 ---
 

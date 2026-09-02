@@ -24,43 +24,19 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        # httpx>=0.28 and free-proxy>=1.1.0 both broke scholarly's proxy
-        # support (scholarly 1.7.11 still calls httpx.Client(proxies=...),
-        # and its free-proxy retry path omits the now-required `repeat` arg).
-        # Pinned below until scholarly fixes its own dependency constraints.
-        run: pip install scholarly "httpx<0.28" "free-proxy<1.1.0"
+        run: pip install requests
 
+      # Scraping scholar.google.com directly does not work from CI: Google
+      # blocks datacenter IP ranges, and `scholarly` responds to the 403 by
+      # retrying the same blocked runner IP with a long backoff, so the job
+      # hangs until the timeout kills it. SerpApi queries Scholar on our
+      # behalf from IPs Google serves, and returns the same citation counts.
       - name: Refresh publications from Google Scholar
-        timeout-minutes: 15
+        timeout-minutes: 10
         env:
           PYTHONUNBUFFERED: "1"
-        run: |
-          set -euo pipefail
-          log_file="$(mktemp)"
-          timeout 12m python -u fetch_scholar.py >"$log_file" 2>&1 &
-          pid=$!
-
-          cleanup() {
-            if kill -0 "$pid" 2>/dev/null; then
-              kill "$pid" 2>/dev/null || true
-            fi
-          }
-          trap cleanup EXIT
-
-          while kill -0 "$pid" 2>/dev/null; do
-            echo "Scholar refresh still running at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-            sleep 30
-          done
-
-          wait "$pid" || status=$?
-          cat "$log_file"
-
-          if [ "${status:-0}" -eq 124 ]; then
-            echo "Scholar refresh timed out after 12 minutes."
-            exit 124
-          fi
-
-          exit "${status:-0}"
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python -u fetch_scholar.py
 
       - name: Commit and push changes
         run: |

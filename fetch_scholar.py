@@ -4,12 +4,20 @@ Google Scholar → data.json Updater
 Fetches your publications from Google Scholar and updates data.json.
 Merges with existing manual entries — never deletes your custom data.
 
+Publication data comes from Google Scholar via SerpApi rather than by
+scraping scholar.google.com directly. Google blocks datacenter IP ranges,
+so a direct scrape works from a home connection but reliably fails from
+CI runners; SerpApi queries Scholar from IPs Google serves and returns the
+same citation counts.
+
 Requirements:
-    pip install scholarly
+    pip install requests
+    export SERPAPI_KEY=...        # free tier: https://serpapi.com
 
 Usage:
     python fetch_scholar.py                          # uses scholarId from data.json
     python fetch_scholar.py --scholar-id "ABC123"    # specify directly
+    python fetch_scholar.py --dry-run                # show changes, write nothing
 
 What it does:
     1. Reads your current data.json
@@ -27,10 +35,10 @@ import argparse
 from datetime import datetime
 
 try:
-    from scholarly import scholarly, ProxyGenerator
+    import requests
 except ImportError:
-    print("Install scholarly first:")
-    print("  pip install scholarly")
+    print("Install requests first:")
+    print("  pip install requests")
     sys.exit(1)
 
 
@@ -38,6 +46,10 @@ DATA_FILE = "data.json"
 BACKUP_FILE = "data.backup.json"
 PLACEHOLDER_IMAGE = "images/publications/placeholder.svg"
 PLACEHOLDER_THUMB = "images/publications/placeholder-thumb.svg"
+
+SERPAPI_ENDPOINT = "https://serpapi.com/search.json"
+REQUEST_TIMEOUT = 60
+PAGE_SIZE = 100
 
 
 def load_data():
@@ -75,96 +87,179 @@ def guess_type(venue):
 
 
 def format_bibtex(pub):
-    """Generate a simple BibTeX entry."""
-    authors = pub.get("bib", {}).get("author", "Unknown")
-    title = pub.get("bib", {}).get("title", "Untitled")
-    year = pub.get("bib", {}).get("pub_year", "????")
-    venue = pub.get("bib", {}).get("venue", "")
-    citation = pub.get("bib", {}).get("citation", "")
+    """Generate a simple BibTeX entry from a normalized publication dict."""
+    authors = pub.get("authors") or "Unknown"
+    title = pub.get("title") or "Untitled"
+    year = pub.get("year") or "????"
+    venue = pub.get("venue") or ""
 
     key = authors.split(" ")[0].lower() + str(year)
-    bib_type = "article" if "journal" in (venue + citation).lower() else "inproceedings"
+    bib_type = "article" if "journal" in venue.lower() else "inproceedings"
 
     return f"@{bib_type}{{{key},title={{{title}}},author={{{authors}}},year={{{year}}}}}"
 
 
-def setup_scholarly_proxy():
-    """Route requests through a rotating free proxy.
+def get_api_key():
+    """Read the SerpApi key from the environment."""
+    key = os.environ.get("SERPAPI_KEY", "").strip()
+    if not key:
+        print("Error: SERPAPI_KEY is not set.")
+        print("  1. Get a free key at https://serpapi.com (250 searches/month)")
+        print("  2. Locally:  export SERPAPI_KEY=your_key")
+        print("     In CI:    add it as the repository secret SERPAPI_KEY")
+        sys.exit(1)
+    return key
 
-    Google Scholar blocks/403s requests from known datacenter IP ranges
-    (e.g. GitHub Actions runners) almost every time. Without a proxy,
-    scholarly retries the *same* blocked IP with 60-120s backoff between
-    attempts, which reliably burns through the whole CI timeout without
-    ever succeeding. With a proxy configured, it switches to a different
-    IP immediately on a 403 instead of waiting.
-    """
-    scholarly.set_timeout(20)
-    scholarly.set_retries(5)
-    pg = ProxyGenerator()
+
+def serpapi_get(api_key, **params):
+    """Call SerpApi and return the parsed JSON, exiting on any error."""
+    params["api_key"] = api_key
     try:
-        success = pg.FreeProxies()
-    except Exception as e:
-        print(f"  Proxy setup raised an exception: {e}")
-        success = False
-
-    if success:
-        scholarly.use_proxy(pg)
-        print("  Using a rotating free proxy to avoid IP-based blocking.")
-    else:
-        print("  No working free proxy found; continuing with a direct connection.")
-
-
-def fetch_scholar_publications(scholar_id):
-    """Fetch publications from Google Scholar."""
-    print(f"\nFetching publications for Scholar ID: {scholar_id}")
-    print("  (This may take 30-60 seconds due to rate limiting...)\n")
-
-    setup_scholarly_proxy()
-
-    try:
-        author = scholarly.search_author_id(scholar_id)
-        author = scholarly.fill(author, sections=["publications"])
-    except Exception as e:
-        print(f"Error fetching author: {e}")
-        print("Possible causes:")
-        print("  - Invalid Scholar ID")
-        print("  - Google Scholar is blocking requests (try again later)")
-        print("  - No internet connection")
+        response = requests.get(SERPAPI_ENDPOINT, params=params, timeout=REQUEST_TIMEOUT)
+    except requests.RequestException as e:
+        print(f"Error: could not reach SerpApi: {e}")
         sys.exit(1)
 
+    try:
+        payload = response.json()
+    except ValueError:
+        print(f"Error: SerpApi returned a non-JSON response (HTTP {response.status_code}).")
+        sys.exit(1)
+
+    # SerpApi reports failures in an `error` key, on both 2xx and 4xx responses.
+    if payload.get("error"):
+        print(f"Error from SerpApi (HTTP {response.status_code}): {payload['error']}")
+        if response.status_code == 401:
+            print("  The SERPAPI_KEY looks invalid. Check https://serpapi.com/manage-api-key")
+        elif response.status_code == 429:
+            print("  Free tier is 250 searches/month and 50 requests/hour.")
+        sys.exit(1)
+
+    if response.status_code >= 400:
+        print(f"Error: SerpApi returned HTTP {response.status_code}.")
+        sys.exit(1)
+
+    return payload
+
+
+def parse_year(value):
+    """Scholar returns the year as a string, and omits it for some entries."""
+    text = str(value or "").strip()
+    return int(text) if text.isdigit() else 0
+
+
+def parse_citations(article):
+    """Read a citation count off an author-API article.
+
+    Scholar omits `cited_by` entirely for never-cited papers, so a missing
+    key means zero rather than an unparsed response.
+    """
+    cited_by = article.get("cited_by") or {}
+    value = cited_by.get("value")
+    return int(value) if isinstance(value, int) else 0
+
+
+def fetch_author_articles(api_key, scholar_id):
+    """Fetch every article on the author's Scholar profile, following pagination."""
+    articles = []
+    params = {
+        "engine": "google_scholar_author",
+        "author_id": scholar_id,
+        "hl": "en",
+        "num": PAGE_SIZE,
+        "start": 0,
+    }
+
+    while True:
+        payload = serpapi_get(api_key, **params)
+        page = payload.get("articles") or []
+        articles.extend(page)
+
+        # Absence of `serpapi_pagination.next` is the only end-of-results signal.
+        if not (payload.get("serpapi_pagination") or {}).get("next"):
+            break
+        if not page:
+            break
+        params["start"] += PAGE_SIZE
+
+    return articles
+
+
+def fetch_citation_details(api_key, citation_id):
+    """Fetch the detail record for one article (abstract, journal, real link).
+
+    The author API only returns a squashed `publication` string like
+    "Genome biology 9 (9), 1-9, 2008", so new papers get one extra lookup to
+    pick up a clean journal name and abstract. Existing papers never need it.
+    """
+    payload = serpapi_get(
+        api_key,
+        engine="google_scholar_author",
+        view_op="view_citation",
+        citation_id=citation_id,
+        hl="en",
+    )
+    return payload.get("citation") or {}
+
+
+def article_to_publication(article, details=None):
+    """Normalize a SerpApi article (plus optional detail record) for merging."""
+    details = details or {}
+
+    title = details.get("title") or article.get("title") or "Untitled"
+    authors = details.get("authors") or article.get("authors") or "Unknown"
+    venue = details.get("journal") or article.get("publication") or ""
+    abstract = details.get("description") or ""
+
+    year = parse_year(article.get("year"))
+    if not year:
+        # Detail records carry dates like "2006/11".
+        year = parse_year(str(details.get("publication_date", "")).split("/")[0])
+
+    # `link` on an author-API article points back at Scholar; the detail
+    # record's `link` is the publisher's page, which is what we want on the site.
+    pub_url = details.get("link") or article.get("link") or "#"
+
+    pub = {
+        "title": title,
+        "authors": authors,
+        "year": year,
+        "venue": venue,
+        "citations": parse_citations(article),
+        "description": abstract[:200] + ("..." if len(abstract) > 200 else ""),
+        "type": guess_type(venue),
+        "pub_url": pub_url,
+    }
+    pub["bibtex"] = format_bibtex(pub)
+    return pub
+
+
+def fetch_scholar_publications(scholar_id, known_titles):
+    """Fetch publications from Google Scholar via SerpApi.
+
+    `known_titles` are the normalized titles already in data.json; anything
+    matching one of those skips the per-article detail lookup, since the merge
+    only refreshes its citation count.
+    """
+    print(f"\nFetching publications for Scholar ID: {scholar_id}")
+
+    api_key = get_api_key()
+    articles = fetch_author_articles(api_key, scholar_id)
+    total = len(articles)
+    print(f"  Found {total} publications on the profile.\n")
+
     publications = []
-    total = len(author.get("publications", []))
-    print(f"  Found {total} publications. Fetching details...\n")
+    for i, article in enumerate(articles, 1):
+        title = article.get("title", "Untitled")
+        details = None
 
-    for i, pub in enumerate(author.get("publications", []), 1):
-        try:
-            filled = scholarly.fill(pub)
-        except Exception:
-            filled = pub
+        if normalize_title(title) not in known_titles and article.get("citation_id"):
+            print(f"  [{i}/{total}] {title[:60]}... (new — fetching details)")
+            details = fetch_citation_details(api_key, article["citation_id"])
+        else:
+            print(f"  [{i}/{total}] {title[:60]}... ({parse_citations(article)} citations)")
 
-        bib = filled.get("bib", {})
-        title = bib.get("title", "Untitled")
-        authors = bib.get("author", "Unknown")
-        year_str = str(bib.get("pub_year", ""))
-        year = int(year_str) if year_str.isdigit() else 0
-        venue = bib.get("venue", bib.get("journal", bib.get("booktitle", "")))
-        citations = filled.get("num_citations", 0)
-        abstract = bib.get("abstract", "")
-        pub_url = filled.get("pub_url", "#")
-
-        print(f"  [{i}/{total}] {title[:60]}... ({citations} citations)")
-
-        publications.append({
-            "title": title,
-            "authors": authors,
-            "year": year,
-            "venue": venue,
-            "citations": citations,
-            "description": abstract[:200] + ("..." if len(abstract) > 200 else ""),
-            "bibtex": format_bibtex(filled),
-            "type": guess_type(venue),
-            "pub_url": pub_url
-        })
+        publications.append(article_to_publication(article, details))
 
     return publications
 
@@ -187,11 +282,16 @@ def merge_publications(existing, fetched, highlight_author):
             # UPDATE: only update citation count (and URLs if they were placeholders)
             old_count = existing_map[key].get("citations", 0)
             new_count = fp["citations"]
-            if new_count != old_count:
+
+            # A previously-cited paper reading as 0 means the count went
+            # missing from the response, not that Scholar forgot the citations.
+            if new_count == 0 and old_count > 0:
+                print(f"  Kept citations (no count returned): {fp['title'][:50]}... ({old_count})")
+            elif new_count != old_count:
                 existing_map[key]["citations"] = new_count
                 print(f"  Updated citations: {fp['title'][:50]}... ({old_count} → {new_count})")
                 updated_count += 1
-                
+
             if existing_map[key].get("url", "#") == "#" and fp["pub_url"] != "#":
                 existing_map[key]["url"] = fp["pub_url"]
             if existing_map[key].get("pdfUrl", "#") == "#" and fp["pub_url"] != "#":
@@ -224,6 +324,8 @@ def merge_publications(existing, fetched, highlight_author):
 def main():
     parser = argparse.ArgumentParser(description="Update data.json from Google Scholar")
     parser.add_argument("--scholar-id", help="Google Scholar author ID (e.g., 'dkNRBCEAAAAJ')")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Report what would change without writing data.json")
     args = parser.parse_args()
 
     # Load data
@@ -248,7 +350,8 @@ def main():
     data["settings"]["scholarId"] = scholar_id
 
     # Fetch
-    fetched = fetch_scholar_publications(scholar_id)
+    known_titles = {normalize_title(p["title"]) for p in data.get("publications", [])}
+    fetched = fetch_scholar_publications(scholar_id, known_titles)
 
     # Get highlight author name
     highlight = data["publications"][0]["highlightAuthor"] if data.get("publications") else ""
@@ -261,6 +364,10 @@ def main():
 
     # Sort by year
     data["publications"].sort(key=lambda p: p.get("year", 0), reverse=True)
+
+    if args.dry_run:
+        print("\nDry run — data.json was not modified.")
+        return
 
     # Save
     print("\nSaving...")
